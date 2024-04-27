@@ -22,6 +22,7 @@
 ;AN011; p5034 Possible virgin hard file problem with direct INT 13 06/03/88 J.K.
 ;AN012; P5049 Attempt to write at DISK BASE table in ROM BIOS	   06/06/88 J.K.
 ;AN013; P5055 Diskcopy fails (Regression of P5049)		   06/09/88 J.K.
+;AN014; broken OEM ID checks in MSDISK.ASM			   04/28/24 Licca
 ;==============================================================================
 
 ;for testing, set itest to 1.  So as MSBIO1.ASM.
@@ -684,6 +685,7 @@ CHECKSINGLESIDED:
 	TEST	AL,0001H	; IS LOW BIT SET? - INDICATES DOUBLE SIDED
 	JNZ	GOODDSK
 	CMP	WORD PTR CS:[DISKSECTOR+8],"." SHL 8 + "3"
+	JA	GOODDSK		; Licca broken oem check
 	JNZ	MUSTBEEARLIER
 	CMP	BYTE PTR CS:[DISKSECTOR+10],"2"
 	JAE	GOODDSK

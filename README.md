@@ -6,7 +6,7 @@ not mine.  I just kept hitting random keys until something happened.
 
 ![compiledos4-qemu_400](https://github.com/neozeed/dos400/assets/9031439/022e8d94-3a30-4c64-9b3b-0cdf0a0245bf)
 
-Yes, it does compile.  Yes it can not boot from Hard Disk.  Yes the CALL 5 debug thing has been patched.
+Yes, it does compile.  Yes it DOES boot from Hard Disk.  Yes the CALL 5 debug thing has been patched.
 Enjoy!
 
 --

@@ -22,52 +22,52 @@ IF SCROLL				;A000;
 ;
 ;
 ;	<R1>	The quotation marks have to left-right justified
-;		���������������������������������������������Ŀ
-;		� The quotation marks (') tell SELECT where   �
-;		� to start wrapping the text onto the next    �
-;		� line.  The assembler line immediately after �
-;		� the first text line automatically calculates�
-;		� the length of this field.  The right border �
-;		� of the text can be adjusted freely - a ruler�
-;		� is drawn for each entry to help in centering�
-;		� text. 				      �
-;		�����������������������������������������������
+;		##############################################
+;		# The quotation marks (') tell SELECT where   #
+;		# to start wrapping the text onto the next    #
+;		# line.  The assembler line immediately after #
+;		# the first text line automatically calculates#
+;		# the length of this field.  The right border #
+;		# of the text can be adjusted freely - a ruler#
+;		# is drawn for each entry to help in centering#
+;		# text. 				      #
+;		###############################################
 ;
 ;	<R2>	The '[' and ']' input field markers cannot be moved
-;		���������������������������������������������Ŀ
-;		� These characters must remain in the same    �
-;		� position.  They define the boundries of     �
-;		� input fields. 			      �
-;		�����������������������������������������������
+;		##############################################
+;		# These characters must remain in the same    #
+;		# position.  They define the boundries of     #
+;		# input fields. 			      #
+;		###############################################
 ;
 ;	<R3>	The panel will be centered in an 80 column screen
-;		���������������������������������������������Ŀ
-;		� This panel will be centered on the screen   �
-;		� when it is displayed.  Please translate     �
-;		� accordingly.				      �
-;		�����������������������������������������������
+;		##############################################
+;		# This panel will be centered on the screen   #
+;		# when it is displayed.  Please translate     #
+;		# accordingly.				      #
+;		###############################################
 ;
 ;	<R4>	The number of lines for the entry MUST be maintained
-;		���������������������������������������������Ŀ
-;		� The number of lines (from top to bottom)    �
-;		� must not change.  Translated text must      �
-;		� conform to the existing number of lines.    �
-;		�����������������������������������������������
+;		##############################################
+;		# The number of lines (from top to bottom)    #
+;		# must not change.  Translated text must      #
+;		# conform to the existing number of lines.    #
+;		###############################################
 ;
 ;	<R5>	The width of the entry must not exceed the RULER provided.
-;		���������������������������������������������Ŀ
-;		� Translated text should remain the same      �
-;		� width (do not exceed the ruler).  Otherwise �
-;		� the text will not fit within the panel.     �
-;		�����������������������������������������������
+;		##############################################
+;		# Translated text should remain the same      #
+;		# width (do not exceed the ruler).  Otherwise #
+;		# the text will not fit within the panel.     #
+;		###############################################
 ;
 ;	<R9>	DO NOT TRANSLATE OR CHANGE!!!!
-;		���������������������������������������������Ŀ
-;		� The information contained in the quotations �
-;		� should NEVER be changed.  These fields are  �
-;		� established for the size of the help text   �
-;		� or error panels.			      �
-;		�����������������������������������������������
+;		##############################################
+;		# The information contained in the quotations #
+;		# should NEVER be changed.  These fields are  #
+;		# established for the size of the help text   #
+;		# or error panels.			      #
+;		###############################################
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
@@ -1276,20 +1276,20 @@ PANEL35_L	EQU	($-PANEL35)/PANEL35_W		     ;AN028;
 ;	      |---------1---------2---------3---------4---------5----|
 
 PANEL36  LABEL	 BYTE					      ;AN000;
-	DB   '������������������������������������������������������Ŀ';AN000;
+	DB   '#######################################################';AN000;
 PANEL36_W	EQU	($-PANEL36)			      ;AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '������������������������������������������������������Ĵ';AN000;
-	DB   '�                                                      �';AN000;
-	DB   '��������������������������������������������������������';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '#######################################################';AN000;
+	DB   '#                                                      #';AN000;
+	DB   '########################################################';AN000;
 PANEL36_L	EQU	($-PANEL36)/PANEL36_W		      ;AN000;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1301,7 +1301,7 @@ PANEL36_L	EQU	($-PANEL36)/PANEL36_W		      ;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 PANEL37  LABEL	 BYTE					      ;AN000;
-	DB '��������������������������������������������������������������������������������';AN000;
+	DB '################################################################################';AN000;
 PANEL37_W	EQU	($-PANEL37)			      ;AN000;
 PANEL37_L	EQU	($-PANEL37)/PANEL37_W		      ;AN000;
 
@@ -1316,7 +1316,7 @@ PANEL37_L	EQU	($-PANEL37)/PANEL37_W		      ;AN000;
 ;     |---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL38  LABEL	 BYTE					      ;AN000;
-	DB 'Press Enter (��) to continue or Esc to Cancel'   ;AN000;
+	DB 'Press Enter (##) to continue or Esc to Cancel'   ;AN000;
 PANEL38_W	EQU	($-PANEL38)			      ;AN000;
 PANEL38_L	EQU	($-PANEL38)/PANEL38_W		      ;AN000;
 
@@ -1774,16 +1774,16 @@ PANEL66_L	EQU	($-PANEL66)/PANEL66_W	   ;AN000;
 ;	      |---------1---------2---------3---------4---------5-|
 
 PANEL67 LABEL BYTE				;AN000;
-	DB   '���������������������������������������������������Ŀ';AN000;
+	DB   '####################################################';AN000;
 PANEL67_W	EQU	($-PANEL67)		;AN000;
-	DB   '�                                                   �';AN000;
-	DB   '�                                                   �';AN000;
-	DB   '�                                                   �';AN000;
-	DB   '�                                                   �';AN000;
-	DB   '�                                                   �';AN000;
-	DB   '���������������������������������������������������Ĵ';AN000;
-	DB   '�                                                   �';AN000;
-	DB   '�����������������������������������������������������';AN000;
+	DB   '#                                                   #';AN000;
+	DB   '#                                                   #';AN000;
+	DB   '#                                                   #';AN000;
+	DB   '#                                                   #';AN000;
+	DB   '#                                                   #';AN000;
+	DB   '####################################################';AN000;
+	DB   '#                                                   #';AN000;
+	DB   '#####################################################';AN000;
 PANEL67_L	EQU	($-PANEL67)/PANEL67_W	;AN000;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

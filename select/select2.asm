@@ -15,12 +15,12 @@ SUBTTL	SELECT2.asm						;AN000;
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      � SELECT1.ASM
-;		      � SELECT2.ASM
-;		      � SELECT3.ASM
-;		      � SELECT4.ASM
-;		      � SELECT5.ASM
-;		      � SELECT6.ASM
+;		      # SELECT1.ASM
+;		      # SELECT2.ASM
+;		      # SELECT3.ASM
+;		      # SELECT4.ASM
+;		      # SELECT5.ASM
+;		      # SELECT6.ASM
 ;
 ;
 ;  Module contains code for :
@@ -72,10 +72,10 @@ SELECT	SEGMENT PARA PUBLIC 'SELECT'                            ;AN000;
 	EXTRN	GET_OVERLAY:NEAR				;AN000;DT
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �WORKSPACE_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #WORKSPACE_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The User Function and Memory Workspace Needs Screen is always presented.
 ;  The screen allows the user to define the memory requirements for
@@ -86,42 +86,42 @@ SELECT	SEGMENT PARA PUBLIC 'SELECT'                            ;AN000;
 ;  All values are re-initialized the second time round only if the new option
 ;  is different from the previously selected option.
 ;
-; �����������������������������������������������������������������Ŀ
-; �		 �  I_WORKSPACE=1 �  I_WORKSPACE=2 �  I_WORKSPACE=3 �
-; �����������������������������������������������������������������Ĵ
-; � P_BREAK	 �  'ON'          �  'ON'          �  'ON'          �
-; � P_BUFFERS	 �  ' '           �  '20'          �  '50,4'        �
-; � P_CPSW	 �  'OFF'         �  'OFF'         �  'OFF'         �
-; � F_CPSW	 �  no		  �  no 	   �  no	    �
-; � P_FCBS	 �  ' '           �  ' '           �  '20,8'        �
-; � P_FILES	 �  '8'           �  '20'          �  '20'          �
-; � P_LASTDRIVE  �  'E'           �  'E'           �  'E'           �
-; � P_STACKS	 �  ' '           �  ' '           �  ' '           �
-; � P_VERIFY	 �  'OFF'         �  'OFF'         �  'OFF'         �
-; � P_PROMPT	 �  '$P$G'        �  '$P$G'        �  '$P$G'        �
-; � F_PROMPT	 �  no		  �  no 	   �  no	    �
-; � P_PATH	 �  ' '           �  ' '           �  ' '           �
-; � F_PATH	 �  no		  �  no 	   �  no	    �
-; � P_APPEND	 �  ' '           �  ' '           �  ' '           �
-; � F_APPEND	 �  no		  �  no 	   �  no	    �
-; � P_ANSI	 �  ' '           �  ' '           �  '/X'          �
-; � F_ANSI	 �  no		  �  yes	   �  yes	    �
-; � P_FASTOPEN	 �  ' '           �  'C:=(50,25)'  �  'C:=(100,200)'�
-; � F_FASTOPEN	 �  no		  �  yes	   �  yes	    �
-; � F_GRAFTABL	 �  no		  �  no 	   �  no	    �
-; � P_GRAPHICS	 �  ' '           �  ' '           �  ' '           �
-; � F_GRAPHICS	 �  no		  �  yes	   �  yes	    �
-; � P_SHARE	 �  ' '           �  ' '           �  ' '           �
-; � F_SHARE	 �  no		  �  no 	   �  no	    �
-; � P_SHELL	 �  '/R'          �  '/R'          �  '/R'          �
-; � F_SHELL	 �  yes 	  �  yes	   �  yes	    �
-; � P_VDISK	 �  ' '           �  ' '           �  ' '           �
-; � F_VDISK	 �  no		  �  no 	   �  no	    �
-; � P_XMAEM	 �  ' '           �  ' '           �  ' '           �
-; � DOS_LOC	 �  'DOS'         �  'DOS'         �  'DOS'         �
-; � F_XMA	 �  yes 	  �  yes	   �  yes	    �
-; � P_XMA2EMS	 �  'FRAME=D000 P254=C800 P255=CC00' for all options�
-; �������������������������������������������������������������������
+; ##################################################################
+; #		 #  I_WORKSPACE=1 #  I_WORKSPACE=2 #  I_WORKSPACE=3 #
+; ##################################################################
+; # P_BREAK	 #  'ON'          #  'ON'          #  'ON'          #
+; # P_BUFFERS	 #  ' '           #  '20'          #  '50,4'        #
+; # P_CPSW	 #  'OFF'         #  'OFF'         #  'OFF'         #
+; # F_CPSW	 #  no		  #  no 	   #  no	    #
+; # P_FCBS	 #  ' '           #  ' '           #  '20,8'        #
+; # P_FILES	 #  '8'           #  '20'          #  '20'          #
+; # P_LASTDRIVE  #  'E'           #  'E'           #  'E'           #
+; # P_STACKS	 #  ' '           #  ' '           #  ' '           #
+; # P_VERIFY	 #  'OFF'         #  'OFF'         #  'OFF'         #
+; # P_PROMPT	 #  '$P$G'        #  '$P$G'        #  '$P$G'        #
+; # F_PROMPT	 #  no		  #  no 	   #  no	    #
+; # P_PATH	 #  ' '           #  ' '           #  ' '           #
+; # F_PATH	 #  no		  #  no 	   #  no	    #
+; # P_APPEND	 #  ' '           #  ' '           #  ' '           #
+; # F_APPEND	 #  no		  #  no 	   #  no	    #
+; # P_ANSI	 #  ' '           #  ' '           #  '/X'          #
+; # F_ANSI	 #  no		  #  yes	   #  yes	    #
+; # P_FASTOPEN	 #  ' '           #  'C:=(50,25)'  #  'C:=(100,200)'#
+; # F_FASTOPEN	 #  no		  #  yes	   #  yes	    #
+; # F_GRAFTABL	 #  no		  #  no 	   #  no	    #
+; # P_GRAPHICS	 #  ' '           #  ' '           #  ' '           #
+; # F_GRAPHICS	 #  no		  #  yes	   #  yes	    #
+; # P_SHARE	 #  ' '           #  ' '           #  ' '           #
+; # F_SHARE	 #  no		  #  no 	   #  no	    #
+; # P_SHELL	 #  '/R'          #  '/R'          #  '/R'          #
+; # F_SHELL	 #  yes 	  #  yes	   #  yes	    #
+; # P_VDISK	 #  ' '           #  ' '           #  ' '           #
+; # F_VDISK	 #  no		  #  no 	   #  no	    #
+; # P_XMAEM	 #  ' '           #  ' '           #  ' '           #
+; # DOS_LOC	 #  'DOS'         #  'DOS'         #  'DOS'         #
+; # F_XMA	 #  yes 	  #  yes	   #  yes	    #
+; # P_XMA2EMS	 #  'FRAME=D000 P254=C800 P255=CC00' for all options#
+; ###################################################################
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 WORKSPACE_SCREEN:						;AN000;
 	INIT_PQUEUE		PAN_WORKSPACE			;AN000; initialize queue
@@ -162,10 +162,10 @@ WORKSPACE_SCREEN:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �CTY_KYBD_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #CTY_KYBD_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The COUNTRY and KEYBOARD support screen is always presented.
 ;  The screen allows the user to choose the pre-defined country and
@@ -235,10 +235,10 @@ CTY_KYBD_SCREEN:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �COUNTRY_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #COUNTRY_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The COUNTRY CODE screen is presented if the user selected to define
 ;  country specific support (CTY_KYBD_SCREEN).
@@ -328,10 +328,10 @@ COUNTRY_SCREEN: 						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �KEYBOARD_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #KEYBOARD_SCREEN			#
+;  #					#
+;  ######################################
 ;  The KEYBOARD CODE screen is presented if the user had selected to
 ;  define country specific support and the country code selected has a valid
 ;  keyboard code association.
@@ -405,10 +405,10 @@ KEYBOARD_SCREEN:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �ALT_KYB_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #ALT_KYB_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The ALTERNATE KEYBOARD CODE screen is presented if the selected keyboard
 ;  has different keyboard layouts.
@@ -472,13 +472,13 @@ ALT_KYB_SCREEN: 						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;   � � � � � � � � � � � � � � � � � � �
-;  � LOAD_KEYBOARD			 �
+;   # # # # # # # # # # # # # # # # # # #
+;  # LOAD_KEYBOARD			 #
 ;
-;  �	This will execute the keyboard	 �
+;  #	This will execute the keyboard	 #
 ;	program to load the requested
-;  �	keyboard routine.		 �
-;   � � � � � � � � � � � � � � � � � � �
+;  #	keyboard routine.		 #
+;   # # # # # # # # # # # # # # # # # # #
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LOAD_KEYBOARD:							;AN000;
@@ -540,10 +540,10 @@ LOAD_KEYBOARD:							;AN000;
 								;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �DEST_DRIVE_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #DEST_DRIVE_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The DESTINATION DRIVE screen is presented when there is an option for
 ;  the destination drive. Possible options are:

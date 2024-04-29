@@ -103,7 +103,7 @@ STACK_SIZE	   EQU	100H
 Instance_Size	   EQU 150		;instance size				;an000; dms;
 Instance_Count	   EQU 3		;number of instances			;an000; dms;
 
-			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
+			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
 			     ;Ё   Common memory adapter declares	       Ё
 			     ;юдддддддддддддддддддддддддддддддддддддддддддддддды
 SLOT_SETUP	EQU   08h		;Mask to put the desired adapter   @RH2
@@ -127,7 +127,7 @@ HOLS_REAL	EQU  00010000B		; MXO card			   @RH3
 XMA1A_VIRT	EQU  00000011B		; XMA1 or XMA/A in virtual mode
 WSP_VIRT	EQU  00000111B		; Any virtual mode...banking used
 
-			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
+			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
 			     ;Ё   XMA, XMA\A, and XMA emulator declares        Ё
 			     ;Ё 					       Ё
 			     ;Ё   The XMA translate table is a 4K x 12 bit     Ё
@@ -171,7 +171,7 @@ EMUL_TTDATA_ON	EQU   1000000000000000B ;XMA translate table data - mask for
 					; to use more than 8 Meg.  Note that
 					; both 0FFFh and FFFFh are inhibit.
 
-			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
+			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
 			     ;Ё   MXO declares				       Ё
 			     ;Ё 					       Ё
 			     ;Ё   The MXO translate table is a 1K x 8 bit      Ё
@@ -231,7 +231,7 @@ EMS_CODEA2 EQU	0A2h			; Memory wrap error
 EMS_CODEA3 EQU	0A3h			; Data in control structure corrupted
 EMS_CODEA4 EQU	0A4h			; Access to this function denied
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё	 Request Header (Common portion)			       Ё
 ;Ё								       Ё
 ;Ё	 This structure defines the portion  that is common to	       Ё
@@ -261,7 +261,7 @@ STAT_GENFAIL  EQU 800CH 		;general failure
 NOT_BUSY      EQU 11111101B		;busy bit (9) NOT BUSY mask (high order byte)
 BUSY_MASK     EQU 00000010B		;busy bit (9) BUSY mask (high order byte)
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё	 Request Header for INIT command			       Ё
 ;Ё								       Ё
 ;Ё	 This structure defines the Request Header for the	       Ё
@@ -285,7 +285,7 @@ RH0	ENDS
 RH0_BPBA EQU	DWORD PTR RH0_BPBO	;OFFSET/SEGMENT OF BPB
 ;note RH0_BPBA at entry to init points to all after DEVICE= on CONFIG.SYS stmt
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё	 Request Header for OUTPUT STATUS command		       Ё
 ;Ё								       Ё
 ;Ё	 This structure defines the Request Header for the	       Ё
@@ -296,7 +296,7 @@ RH10	STRUC
 RH10	ENDS
 
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё	 Request Header for Generic IOCTL Request		       Ё
 ;юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
 
@@ -311,7 +311,7 @@ RH19_RQPK   DD	 ?		; Pointer to Generic IOCTL request packet  @RH6
 RH19	ENDS
 
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё	 Map EMS INT 67H vector in low storage			       Ё
 ;Ё								       Ё
 ;Ё	 The vector for the interrupt handler for INT 67H	       Ё
@@ -324,7 +324,7 @@ EMS_VECO DW	?			;offset
 EMS_VECS DW	?			;segment
 INT_VEC ENDS
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё	 Map EM INT 15H vector in low storage			       Ё
 ;Ё								       Ё
 ;Ё	 The vector for the extended memory interrupt handler INT 15h  Ё
@@ -338,7 +338,7 @@ EM_VECS DW    ? 		      ;segment					;an000; dms;
 INT_VEC15 ENDS									;an000; dms;
 
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё	 Map INT 13h vector in low storage			       Ё
 ;Ё								       Ё
 ;Ё	 The vector for the disk access interrupt handler INT 13h      Ё
@@ -389,7 +389,7 @@ RH_PTRO 	DW	?		;offset
 RH_PTRS 	DW	?		;segment
 		db	7 dup(0)	;align following tables on seg.
 
-;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё  HANDLE LOOKUP TABLE 						Ё
 ;Ё									Ё
 ;Ё     This table keeps track of EMS handles and pages assigned 	Ё
@@ -425,7 +425,7 @@ XREF_TABLE_LEN	EQU  2048			;			   @RH1
 HANDLE_XREF_TABLE  DW  XREF_TABLE_LEN  DUP(0)	; Changed from byte to	   @RH1
 						;  word table		   @RH1
 XREF_TABLE_END	EQU  ($)	       ;Used for table shift on deallocate @RH1
-;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё  PAGE ALLOCATION LIST						Ё
 ;Ё									Ё
 ;Ё	 This is the structure pointed to by the handle lookup table.	Ё
@@ -1219,7 +1219,7 @@ MLP_BX_LE_TOT:
 	JB	MLP_LP_OK	       ; of pages for this handle?
 	    MOV     AH,EMS_CODE8A      ;No...error log. page out of range  @RH1
 	    JMP     MLP_EXIT	       ;exit
-					;здддддддддддддддддддддддддддддддддддд#
+					;зддддддддддддддддддддддддддддддддддддд©
 					;Ё Convert handle's logical page to    Ё
 					;Ё  relative page in the EMS pool (SI) Ё
 					;юддддддддддддддддддддддддддддддддддддды
@@ -1240,7 +1240,7 @@ MLP_GOT_PHYS_PG:				      ; desired page	   @RH8
 
 
 
-					;здддддддддддддддддддддддддддддддддддд#
+					;зддддддддддддддддддддддддддддддддддддд©
 					;Ё Get seg addr of the phys page (DI)  Ё
 MLP_GET_SEG:				;юддддддддддддддддддддддддддддддддддддды
 	XOR	DI,DI			;Clear offset into mappable phys.  @RH4
@@ -1296,7 +1296,7 @@ MAP_L_TO_P ENDP
 
 
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё    Subroutine: WRITE TRANSLATE TABLE FOR EMS PAGE			       Ё
 ;Ё		  XMA VIRTUAL MODE					       Ё
 ;Ё									       Ё
@@ -1351,7 +1351,7 @@ VM_NEXT_TT:
 W_EMSPG_XVIRT  ENDP
 
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё    Subroutine: WRITE TRANSLATE TABLE FOR EMS PAGE			       Ё
 ;Ё		  XMA REAL MODE 					       Ё
 ;Ё									       Ё
@@ -1401,7 +1401,7 @@ RM_NEXT_TT:
 	RET
 W_EMSPG_XREAL  ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё    Subroutine: WRITE TRANSLATE TABLE FOR EMS PAGE			       Ё
 ;Ё		  Memory Expansion Option (MXO)				       Ё
 ;Ё									       Ё
@@ -1447,7 +1447,7 @@ HM_WRITETT:
 	RET
 W_EMSPG_HLST  ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё    Subroutine: MULTIPLE MEMORY CARD SETUP				       Ё
 ;Ё									       Ё
 ;Ё	  This subroutine selects the correct card in a multicard	       Ё
@@ -2559,7 +2559,7 @@ EMS_Link_Set	endp					;			;an001; dms;
 
 
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 ;Ё								     Ё
 ;Ё	LIM 4.0 functions are kept in a seperate include file,	     Ё
 ;Ё	LIM40.INC						     Ё

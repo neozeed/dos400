@@ -1,5 +1,5 @@
 VGA_TABLE	   LABEL BYTE						       ;AN000;
-    MODE_TABLE	 < 1, 1,, 16,  -1,  -1, 40, -1> ; mode	1 # To give preference;AN000;
+    MODE_TABLE	 < 1, 1,, 16,  -1,  -1, 40, -1> ; mode	1 Ä¿ To give preference;AN000;
     MODE_TABLE	 < 0, 1,, 16,  -1,  -1, 40, -1> ; mode	0  ³ of COxx over      ;AN000;
     MODE_TABLE	 < 3, 1,, 16,  -1,  -1, 80, -1> ; mode	3  ³ BWxx.	       ;AN000;
     MODE_TABLE	 < 2, 1,, 16,  -1,  -1, 80, -1> ; mode	2 ÄÙ	(see text)     ;AN000;
@@ -19,7 +19,7 @@ MCGA_TABLE	   LABEL BYTE						       ;AN000;
 MCGA_NUM	 EQU  ($ - MCGA_TABLE)/(TYPE MODE_TABLE)		       ;AN000;
 
 EGA_5154_TABLE	   LABEL BYTE						       ;AN000;
-    MODE_TABLE	 < 1, 1,, 16,  -1,  -1, 40, 43> ; mode	1 # To give preference;AN000;
+    MODE_TABLE	 < 1, 1,, 16,  -1,  -1, 40, 43> ; mode	1 Ä¿ To give preference;AN000;
     MODE_TABLE	 < 0, 1,, 16,  -1,  -1, 40, 43> ; mode	0  ³ of COxx over      ;AN000;
     MODE_TABLE	 < 3, 1,, 16,  -1,  -1, 80, 43> ; mode	3  ³ BWxx.	       ;AN000;
     MODE_TABLE	 < 2, 1,, 16,  -1,  -1, 80, 43> ; mode	2 ÄÙ	(see text)     ;AN000;
@@ -43,7 +43,7 @@ MONO_TABLE	   LABEL BYTE						       ;AN000;
 MONO_NUM	 EQU  ($ - MONO_TABLE)/(TYPE MODE_TABLE)		       ;AN000;
 
 COLOR_TABLE	   LABEL BYTE						       ;AN000;
-    MODE_TABLE	 < 1, 1,, 16,  -1,  -1, 40, 25> ; mode	1 # To give preference;AN000;
+    MODE_TABLE	 < 1, 1,, 16,  -1,  -1, 40, 25> ; mode	1 Ä¿ To give preference;AN000;
     MODE_TABLE	 < 0, 1,, 16,  -1,  -1, 40, 25> ; mode	0  ³ of COxx over      ;AN000;
     MODE_TABLE	 < 3, 1,, 16,  -1,  -1, 80, 25> ; mode	3  ³ BWxx.	       ;AN000;
     MODE_TABLE	 < 2, 1,, 16,  -1,  -1, 80, 25> ; mode	2 ÄÙ	(see text)     ;AN000;

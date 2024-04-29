@@ -15,12 +15,12 @@ SUBTTL	SELECT9.asm
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      # SELECT1.ASM
-;		      # SELECT2.ASM
-;		      # SELECT3.ASM
-;		      # SELECT4.ASM
-;		      # SELECT5.ASM
-;		      # SELECT6.ASM
+;		      � SELECT1.ASM
+;		      � SELECT2.ASM
+;		      � SELECT3.ASM
+;		      � SELECT4.ASM
+;		      � SELECT5.ASM
+;		      � SELECT6.ASM
 ;
 ;
 ;  Module contains code for :

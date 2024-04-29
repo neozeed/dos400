@@ -3311,7 +3311,7 @@ WR_UIINDLEN    EQU  ($-WR_UIIND)	     ;AN000;
 WR_DIIND       DB   25			     ;AN000;define down indicator buffer
 WR_DIINDLEN    EQU  ($-WR_DIIND)	     ;AN000;
 
-WR_PIIND       DB   '#'                      ;AN000;selection pointer indicator buff
+WR_PIIND       DB   '�'                      ;AN000;selection pointer indicator buff
 WR_PIINDLEN    EQU  ($-WR_PIIND)	     ;AN000;
 
 WR_AIIND       DB   '<'                      ;AN000;active string indicator buffer

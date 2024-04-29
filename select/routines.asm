@@ -1074,7 +1074,7 @@ CHK_EX_MEM_ROUTINE PROC FAR			;AN000;
 	 .IF < AL eq 04 > or			;AN000;
 	 .IF < AL eq 05 >			;AN000;
 					;-------------------------------------
-					; Search for XMA/A cards	      #
+					; Search for XMA/A cards	      �
 					;-------------------------------------
 	      XOR     CX,CX			;AN000;Check all slots starting at 0	 @RH2
 	      MOV     BX,0			;AN000;JW say not a model 80
@@ -1109,7 +1109,7 @@ CHK_EX_MEM_ROUTINE PROC FAR			;AN000;
 						;
 	 .ELSE					;AN000; AT or XT
 					;-------------------------------------
-					; Search for XMA cards		      #
+					; Search for XMA cards		      �
 					;-------------------------------------
 	      MOV     DX,MODE_REG		;AN000;SAVE CONTENTS OF MODE REG
 	      IN      AL,DX			;AN000;

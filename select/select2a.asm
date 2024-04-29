@@ -15,12 +15,12 @@ SUBTTL	SELECT2A.asm						;AN000;
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      # SELECT1.ASM
-;		      # SELECT2.ASM
-;		      # SELECT3.ASM
-;		      # SELECT4.ASM
-;		      # SELECT5.ASM
-;		      # SELECT6.ASM
+;		      � SELECT1.ASM
+;		      � SELECT2.ASM
+;		      � SELECT3.ASM
+;		      � SELECT4.ASM
+;		      � SELECT5.ASM
+;		      � SELECT6.ASM
 ;
 ;	CHANGE HISTORY:
 ;
@@ -67,10 +67,10 @@ SELECT	SEGMENT PARA PUBLIC 'SELECT'                            ;AN000;
 	EXTRN	choose_shell_screen:NEAR			;mrw0 ;AC020;SEH
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  #####################################
-;  #DOS_LOC_SCREEN			#
-;  #					#
-;  ######################################
+;  ������������������������������������Ŀ
+;  �DOS_LOC_SCREEN			�
+;  �					�
+;  ��������������������������������������
 ;
 ;  The DOS LOCATION screen is presented only if DOS is to be installed
 ;  on drive C:.
@@ -163,10 +163,10 @@ GET_DOS_LOCATION:						;AN000;
 	PUSH_HEADING		DOS_LOC_SCREEN			;AC051;SEH ;AN000;    save screen address on SELECT STACK
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  #####################################
-;  #PRINTER_SCREEN			#
-;  #					#
-;  ######################################
+;  ������������������������������������Ŀ
+;  �PRINTER_SCREEN			�
+;  �					�
+;  ��������������������������������������
 ;
 ;  The PRINTER SCREEN is always presented.
 ;  The screen allows the user to indicate the number of printers attached.
@@ -200,10 +200,10 @@ PRINTER_SCREEN: 						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  #####################################
-;  #PRINTER_TYPE_SCREEN 		#
-;  #					#
-;  ######################################
+;  ������������������������������������Ŀ
+;  �PRINTER_TYPE_SCREEN 		�
+;  �					�
+;  ��������������������������������������
 ;
 ;	Get type of printer
 ;

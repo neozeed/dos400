@@ -13,12 +13,12 @@
 ;	DW	OFFSET modes	 pointer to list of display modes
 ;	DW	OFFSET fonts	 pointer to list of font resolutions
 ;
-;    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#
+;    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 ;    ³ Loading mechanism bit incoding			    ³
 ;    ³							    ³
 ;    ³	 USER ? 					    ³
 ;    ³	   ³	  BIOS SUPPORT				    ³
-;    ³	ÚÄÄÁÄ# ÚÄÄÁÄ# 				    ³
+;    ³	ÚÄÄÁÄÄ¿ ÚÄÄÁÄÄ¿ 				    ³
 ;    ³							    ³
 ;    ³	7 6 5 4 3 2 1 0 				    ³
 ;    ³	x x x x 0 0 x x 				    ³
@@ -35,7 +35,7 @@
 ;    ³	ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 1 = LCD 44H handling needed	    ³
 ;    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 ;
-;    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#
+;    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 ;    ³ Memory Requirements				    ³
 ;    ³							    ³
 ;    ³	7 6 5 4 3 2 1 0 				    ³
@@ -101,7 +101,7 @@ EGA_MODES:			;
 	DB	00110000b	;5
 	DB	00110000b	;6
 	DB	00000001b	;7
-	DB	11111111b     ;D;8 ÄÄÄÄÄ#
+	DB	11111111b     ;D;8 ÄÄÄÄÄÄ¿
 	DB	11111111b     ;D;9	 ³
 	DB	11111111b     ;D;A    RESERVED
 	DB	11111111b     ;D;B	 ³
@@ -136,7 +136,7 @@ EGAM_MODES:			;
 	DB	11111111b	;5
 	DB	11111111b	;6
 	DB	00010001b	;7
-	DB	11111111b     ;D;8 ÄÄÄÄÄ#
+	DB	11111111b     ;D;8 ÄÄÄÄÄÄ¿
 	DB	11111111b     ;D;9	 ³
 	DB	11111111b     ;D;A    RESERVED
 	DB	11111111b     ;D;B	 ³
@@ -170,7 +170,7 @@ LCD_MODES:			;
 	DB	11010000b	;5
 	DB	11010000b	;6
 	DB	00000010b	;7
-	DB	11111111b     ;D;8 ÄÄÄÄÄ#
+	DB	11111111b     ;D;8 ÄÄÄÄÄÄ¿
 	DB	11111111b     ;D;9	 ³
 	DB	11111111b     ;D;A    RESERVED
 	DB	11111111b     ;D;B	 ³
@@ -205,7 +205,7 @@ MONO_FONT_SIZE: 		;
 	DB	11111111b	;5
 	DB	11111111b	;6
 	DB	11111111b	;7
-	DB	11111111b     ;D;8 ÄÄÄÄÄ#
+	DB	11111111b     ;D;8 ÄÄÄÄÄÄ¿
 	DB	11111111b     ;D;9	 ³
 	DB	11111111b     ;D;A    RESERVED
 	DB	11111111b     ;D;B	 ³
@@ -239,7 +239,7 @@ EGA_FONT_SIZE:			;		this needs to be adjusted
 	DB	8		;5
 	DB	8		;6
 	DB	0		;7
-	DB	0FFH	      ;D;8 ÄÄÄÄÄ#
+	DB	0FFH	      ;D;8 ÄÄÄÄÄÄ¿
 	DB	0FFH	      ;D;9	 ³
 	DB	0FFH	      ;D;A    RESERVED
 	DB	0FFH	      ;D;B	 ³
@@ -273,7 +273,7 @@ EGA8_FONT_SIZE: 		;
 	DB	8		;5
 	DB	8		;6
 	DB	0FFH		;7
-	DB	0FFH	      ;D;8 ÄÄÄÄÄ#
+	DB	0FFH	      ;D;8 ÄÄÄÄÄÄ¿
 	DB	0FFH	      ;D;9	 ³
 	DB	0FFH	      ;D;A    RESERVED
 	DB	0FFH	      ;D;B	 ³
@@ -307,7 +307,7 @@ EGA14_FONT_SIZE:		;
 	DB	 8		;5
 	DB	 8		;6
 	DB	14		;7
-	DB	0FFH	      ;D;8 ÄÄÄÄÄ#
+	DB	0FFH	      ;D;8 ÄÄÄÄÄÄ¿
 	DB	0FFH	      ;D;9	 ³
 	DB	0FFH	      ;D;A    RESERVED
 	DB	0FFH	      ;D;B	 ³
@@ -341,7 +341,7 @@ LCD_FONT_SIZE:			;
 	DB	8		;5
 	DB	8		;6
 	DB	8		;7
-	DB	0FFH	      ;D;8 ÄÄÄÄÄ#
+	DB	0FFH	      ;D;8 ÄÄÄÄÄÄ¿
 	DB	0FFH	      ;D;9	 ³
 	DB	0FFH	      ;D;A    RESERVED
 	DB	0FFH	      ;D;B	 ³

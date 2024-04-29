@@ -1,4 +1,4 @@
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё Include File: PS2_5060.INC					      Ё
 ;Ё								      Ё
 ;Ё Purpose: Initialization code for the Personal Systems/2	      Ё
@@ -40,7 +40,7 @@
 include SYSVAR.INC			;system variables structure		;an007; dms;
 
 
-			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
+			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
 			     ;Ё   XMA/A declares			       Ё
 			     ;юдддддддддддддддддддддддддддддддддддддддддддддддды
 HI6BIT_MASK	EQU  00000011b		;Mask for 2 bit bank descriptor
@@ -55,7 +55,7 @@ X_CTRL_REG_VAL	   DB	?		;temporary holder for XMAA's
 					; control (mem size bank 4) reg.
 X_BLKS_PER_HALFM   DB  128		;4K blocks per half meg of memory
 XMAA_NUM_BLOCKS DW	?		;temp for # of 4K blocks on xmaa   @RH2
-			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
+			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
 			     ;Ё   Expanded Memory Option (XMO) declares	       Ё
 			     ;юдддддддддддддддддддддддддддддддддддддддддддддддды
 NUM_CINFO_BANKS EQU 3			;# of complete memory banks (4-2)
@@ -65,7 +65,7 @@ H_CARD_INFO_VAL    DB	?		;temporary holder for XMO card's
 					; info (memory size) register
 H_BLKS_PER_HALFM   DB	32		;16K XMO card blocks per 1/2M of mem
 HLST_NUM_BLOCKS DW	?		;temp for # of 16K blocks on hlstr @RH3
-			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
+			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
 			     ;Ё   /E option declares			       Ё
 			     ;Ё    (used to set extended memory)	       Ё
 			     ;юдддддддддддддддддддддддддддддддддддддддддддддддды
@@ -95,7 +95,7 @@ INIT_MOD_50_60	PROC
 	MOV	NUM_MEM_CARDS,0 	; system & # of memory cards found @RH2
 	XOR	DI,DI			;Clear offset into mem card table  @RH2
 
-			;зддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+			;здддддддддддддддддддддддддддддддддддддддддддддддддддд#
 			;Ё Search for XMO cards			  	       Ё
 			;юддддддддддддддддддддддддддддддддддддддддддддддддддддды
 	XOR	CX,CX			;Check all system slots starting   @RH2
@@ -119,7 +119,7 @@ HLST_CHECK:
 
 	MOV	BX,HLST_NUM_BLOCKS	;1 XMO card block = an EMS page
 
-				       ;здддддддддддддддддддддддддддддддддддддд©
+				       ;зддддддддддддддддддддддддддддддддддддд#
 				       ;Ё Save info in the memory card table   Ё
 				       ;юдддддддддддддддддддддддддддддддддддддды
 	MOV	MEM_CARD_TABLE.CARD_ID[DI],AX	   ;Save the card ID and   @RH5
@@ -141,7 +141,7 @@ H_NEXT_SLOT:
 	JB	H_SLOT_SCAN			 ;Yes..check next slot		;ac000; dms;
 						 ;No fall through loop	    RH2
 
-			;зддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+			;здддддддддддддддддддддддддддддддддддддддддддддддддддд#
 			;Ё Search for XMA/A cards			       Ё
 			;юддддддддддддддддддддддддддддддддддддддддддддддддддддды
 	XOR	CX,CX			;Check all slots starting at 0	   @RH2
@@ -166,7 +166,7 @@ XMAA_CHECK:
 	SHR	BX,1			; by 4 to get number or 16K EMS    @RH2
 	SHR	BX,1			; pages on this card		   @RH2
 
-				       ;здддддддддддддддддддддддддддддддддддддд©
+				       ;зддддддддддддддддддддддддддддддддддддд#
 				       ;Ё Save info in the memory card table   Ё
 				       ;юдддддддддддддддддддддддддддддддддддддды
 	MOV	MEM_CARD_TABLE.CARD_ID[DI],AX	   ;Save the card ID and   @RH5
@@ -194,10 +194,10 @@ X_NEXT_SLOT:
 	    MOV     DX,OFFSET NOT_FOUND_MSG	 ; 1st part of error msg   @RH4
 	    JMP     INIT_50_60_RET		 ; for no card found	   @RH4
 
-			;зддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+			;здддддддддддддддддддддддддддддддддддддддддддддддддддд#
 			;Ё Calculate /E parameter - amount of memory for EMS   Ё
 			;юддддддддддддддддддддддддддддддддддддддддддддддддддддды
-					;здддддддддддддддддддддддддддддддддддд©
+					;зддддддддддддддддддддддддддддддддддд#
 					;Ё Find ext mem addr of bottom card   Ё
 					;Ё in case card memory ever starts at Ё
 					;Ё something other than 1M + 384K     Ё
@@ -249,7 +249,7 @@ FIND_H_1ST_LOOP:			; search for start of ext mem	   @RH4
 	JMP	FIND_H_1ST_LOOP 	; if ext mem starts at next 16K    @RH4
 FIRST_EXT_FOUND:
 	MOV	CARD_EXT_S16K,AX	;Save the start of ext mem ptr	   @RH4
-					;здддддддддддддддддддддддддддддддддддд©
+					;зддддддддддддддддддддддддддддддддддд#
 					;Ё Calc pages for extended memory     Ё
 					;юдддддддддддддддддддддддддддддддддддды
 	MOV	AH,88H			;Go to BIOS and find amount of	   @RH4
@@ -289,7 +289,7 @@ CHECK_E_PARM:				;Else test user specified # EMS pgs@RH4
 	    LEA     DX,REQ_EMS_ERR_MSG	; Set first part of error message  @RH4
 	    JMP     INIT_50_60_RET	;				   @RH4
 
-					;здддддддддддддддддддддддддддддддддддд©
+					;зддддддддддддддддддддддддддддддддддд#
 					;Ё Mark PAL for extended memory pages Ё
 					;юдддддддддддддддддддддддддддддддддддды
 MARK_EXT_IN_PAL:
@@ -319,7 +319,7 @@ MARK_PREV_LP:				;				   @RH4
 	MOV	PAGE_ALLOC_LIST[DI],PREV_EXT	 ;Place a 'PE' in the PAL  @RH4
 	ADD	DI,TYPE PAGE_ALLOC_LIST 	 ; (Previous Extended) for @RH4
 	LOOP	MARK_PREV_LP			 ; these entries	   @RH4
-					;здддддддддддддддддддддддддддддддддддд©
+					;зддддддддддддддддддддддддддддддддддд#
 					;Ё Disable translate table entries    Ё
 					;Ё in extended memory for memory      Ё
 					;Ё used as EMS			      Ё
@@ -424,7 +424,7 @@ INIT_50_60_RET:
 	RET
 INIT_MOD_50_60	ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё HLST_MEM_ADD subprocedure					      Ё
 ;Ё   Calculates the amount of memory on the XMO card		      Ё
 ;Ё     on entry: (CL) = card slot #				      Ё
@@ -503,7 +503,7 @@ H_B42_HMEG_OK:
 	RET
 HLST_MEM_ADD  ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё XMAA_MEM_ADD subprocedure					      Ё
 ;Ё   Calculates the amount of memory on the XMAA card		      Ё
 ;Ё     on entry: (CL) = card slot #				      Ё
@@ -586,7 +586,7 @@ CONF_HMEG_OK:
 	RET
 XMAA_MEM_ADD  ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё H_READ_TT subprocedure					      Ё
 ;Ё   Reads the contents of a translate table entry on a XMO card      Ё
 ;Ё     on entry: (AX) = Translate table pointer 		      Ё
@@ -607,7 +607,7 @@ H_READ_TT	PROC
 	RET				;				   @RH4
 H_READ_TT	ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё X_READ_TT subprocedure					      Ё
 ;Ё   Reads the contents of a translate table entry on an XMA/A card   Ё
 ;Ё     on entry: (AX) = Translate table pointer 		      Ё
@@ -633,7 +633,7 @@ X_READ_TT	PROC
 	RET				;				   @RH4
 X_READ_TT	ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё H_INH_FOR_EMS subprocedure					      Ё
 ;Ё   Inhibits a single translate table entry of extended memory       Ё
 ;Ё   on a XMO card.  This entry (16K) is for use by EMS.	      Ё
@@ -655,7 +655,7 @@ H_INH_FOR_EMS	PROC
 	RET				;				   @RH4
 H_INH_FOR_EMS	ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё X_INH_FOR_EMS subprocedure					      Ё
 ;Ё   Inhibits a single translate table entry of extended memory       Ё
 ;Ё   on a XMA/A card.  This entry (4K) is for use by EMS.	      Ё
@@ -680,7 +680,7 @@ X_INH_FOR_EMS	PROC
 	RET				;				   @RH4
 X_INH_FOR_EMS	ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё ADJUST_CMOS subprocedure					      Ё
 ;Ё   Reset the CMOS value for amount of extended memory.  The	      Ё
 ;Ё   memory off the 'top' (upper addresses) is used by EMS.           Ё

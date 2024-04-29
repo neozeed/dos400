@@ -1064,7 +1064,7 @@ PAGE										;AN000;
 ;  (E.G.,  COLOR  =  010	; COLOR # 2					;AN000;
 ;	   PALETTE=    0	; PALETTE # 0					;AN000;
 ;										;AN000;
-;	   IRGB   =  0100	; Intensity = 0  Ä¿				;AN000;
+;	   IRGB   =  0100	; Intensity = 0  #				;AN000;
 ;				; Red	    = 1   ÃÄÄÄ> color = Red		;AN000;
 ;				; Green     = 0   ³				;AN000;
 ;				; Blue	    = 0  ÄÙ				;AN000;

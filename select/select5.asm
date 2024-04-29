@@ -15,12 +15,12 @@ SUBTTL	SELECT5.asm						;AN000;
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      � SELECT1.ASM
-;		      � SELECT2.ASM
-;		      � SELECT3.ASM
-;		      � SELECT4.ASM
-;		      � SELECT5.ASM
-;		      � SELECT6.ASM
+;		      # SELECT1.ASM
+;		      # SELECT2.ASM
+;		      # SELECT3.ASM
+;		      # SELECT4.ASM
+;		      # SELECT5.ASM
+;		      # SELECT6.ASM
 ;
 ;  Module contains code for :
 ;	- VDISK screen
@@ -87,10 +87,10 @@ SELECT	SEGMENT PARA PUBLIC 'SELECT'                            ;AN000;segment fo
 	EXTRN	EXIT_SELECT:NEAR				;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �VDISK_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #VDISK_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The VDISK PARAMETERS SCREEN is presented if the user selected to
 ;  install virtual disk support and the user wants to view/change parameters.
@@ -122,10 +122,10 @@ VDISK_SCREEN:							;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �CONFIG_SYS_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #CONFIG_SYS_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The CONFIG.SYS PARAMETERS SCREEN is presented if the user selected to
 ;  view/change SELECT generated commands ( F_REVIEW = 2 ).
@@ -222,10 +222,10 @@ CONFIG_SYS_SCREEN:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �FIRST_DISK_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #FIRST_DISK_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The PARTITION FIXED DISK SCREEN is presented if the first fixed drive
 ;  exists and is completely unused.
@@ -251,11 +251,11 @@ FIRST_DISK_SCREEN:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �MAKE_BACKUP_DISKETTE		�
-;  �					�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #MAKE_BACKUP_DISKETTE		#
+;  #					#
+;  #					#
+;  ######################################
 ;
 ;	WE NEED TO MAKE A DUPLICATE OF THE SELECT/SHELL DISKETTE 
 ;	FOR R/W PURPOSES!
@@ -323,8 +323,8 @@ MAKE_BACKUP_DISKETTE:						;AN000;
 	OR  SEL_FLG,INSTALLRW					;AN000; indicate INSTALL diskette is R/W
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-; � Create the CONFIG.340, AUTOEXEC.340, and SHELL.BAT on the	�
-; � INSTALL COPY diskette in drive A:				�
+; # Create the CONFIG.340, AUTOEXEC.340, and SHELL.BAT on the	#
+; # INSTALL COPY diskette in drive A:				#
 ;  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	CREATE_CONFIG		S_CONFIG_NEW, N_RETCODE 	;AN000;
@@ -345,11 +345,11 @@ MAKE_BACKUP_DISKETTE:						;AN000;
 	.ENDIF							;AN000;DT
 								;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;  ������������������������������������Ŀ
-;  �DISK_PARTITION_OPTION		�
-;  �					�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #DISK_PARTITION_OPTION		#
+;  #					#
+;  #					#
+;  ######################################
 ;
 ;	If the first fixed disk is not new (existing partition)
 ;	goto different screen.	Else present screen with partition
@@ -479,11 +479,11 @@ FDISK_ERROR:							;AN000;
 	GOTO	       INSTALL_ERROR				;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �BOTH_DISK_SCREEN			�
-;  �					�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #BOTH_DISK_SCREEN			#
+;  #					#
+;  #					#
+;  ######################################
 ;
 ;	Ask user if they want to change the existing partition
 ;	layout or leave it the same (for both disks if 2nd exists).

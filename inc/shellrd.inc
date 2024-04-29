@@ -113,7 +113,7 @@ PAGE
 ;			set to COM_HCBIDL and COM_HCBIDH.  It is important    :
 ;			that the help equates are in sequential order.	      :
 ;									      :
-;			ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿		      :
+;			ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#		      :
 ;	     COM_HCBIDL ÄÄ 1. First element to highlight ÄÄÄÄ AX	      :
 ;			³  2.	     :	     :		  ³		      :
 ;			³  3.	     :	     :		  ³		      :

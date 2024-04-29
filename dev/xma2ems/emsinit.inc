@@ -24,7 +24,7 @@ END_BACMEM_SEG	 DW  0			; of memory backed by the XMA card
 INIT_ERR	DW   ?			;Initialization error flag	   @RH4
 NO_ERROR	EQU  0			;				   @RH4
 ERROR		EQU  1			;				   @RH4
-			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
+			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
 			     ;Ё Device driver IOCTL call declares	       Ё
 			     ;юдддддддддддддддддддддддддддддддддддддддддддддддды
 EMULATOR_DD_NAME   DB	'386XMAEM',0    ;Device driver names for the Emulator
@@ -90,7 +90,7 @@ INIT	PROC
 	    JMP     GENERAL_FAILURE	;indicate general failure
 PARMS_OK:
 
-			;зддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+			;здддддддддддддддддддддддддддддддддддддддддддддддддддд#
 			;Ё Does the system use the XMA Emulator?	       Ё
 			;Ё  (PS/2 model 80 with 80386 processor)	       Ё
 			;юддддддддддддддддддддддддддддддддддддддддддддддддддддды
@@ -153,7 +153,7 @@ EMUL_VER_GOOD:
 	MOV	MEMCARD_MODE,EMUL_VIRT	;Set flag for hardware used	   @RH7
 	INT	21h			;				   @RH7
 	JMP	INT_67_INSTALL		;Install int 67 vector, end init   @RH7
-			;зддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+			;здддддддддддддддддддддддддддддддддддддддддддддддддддд#
 NOT_PS2MODEL80:		;Ё Does the system use the XMA\A or XMO card?	       Ё
 			;Ё  (PS/2 models 50 and 60)			       Ё
 			;юддддддддддддддддддддддддддддддддддддддддддддддддддддды
@@ -173,7 +173,7 @@ NOT_PS2MODEL50:				;				   @RH2
 	JMP	FAMILY_1_MACH		;				   @RH2
 IS_PS2MODEL60:
 	MOV	NUM_OF_SLOTS,8		;PS2/60 has 8 adapter slots  	   @RH2
-			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
+			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
 PS2_5060:		     ;Ё Machine is a PS/2 Model 50 (TB) or 60 (RR).    Ё
 			     ;Ё  Check for the Workstation Program's XMA/A     Ё
 			     ;Ё  virtual mode device driver (INDXMAA.SYS).  If Ё
@@ -221,7 +221,7 @@ XMAA_VER_GOOD:
 	MOV	MEMCARD_MODE,XMAA_VIRT	;Set hardware flag to XMAA virtual @RH6
 	JMP	INT_67_INSTALL		;Install int 67 vector,end init    @RH6
 
-			     ;здддддддддддддддддддддддддддддддддддддддддддддддд©
+			     ;зддддддддддддддддддддддддддддддддддддддддддддддд#
 PS2_5060_REAL:		     ;Ё PS/2 Model 50 or 60 without XMA/A virtual DD.  Ё
 			     ;Ё  Use XMA/A card in real mode (Bank ID reg      Ё
 			     ;Ё  not used) or XMO card.			       Ё
@@ -332,7 +332,7 @@ skip_pars:
 
 
 
-			;зддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+			;здддддддддддддддддддддддддддддддддддддддддддддддддддд#
 			;Ё Initialize the entries in the Page Allocation List  Ё
 			;юддддддддддддддддддддддддддддддддддддддддддддддддддддды
 	MOV	CX,TOTAL_SYS_PAGES
@@ -522,7 +522,7 @@ include romscan.inc			; code to do romscan for hole location/verification
 INCLUDE PARMPARS.INC			;Routines to parse the parameters
 					; on the CONFIG.SYS line
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё  Subprocedure:  BACK_CONV_MEM					Ё
 ;Ё									Ё
 ;Ё  Purpose:  Called when a portion of the XMA card is used to back	Ё
@@ -566,7 +566,7 @@ BACK_MEM_PAL:
 			; number of pages it needs.
 BACK_CONV_MEM	ENDP
 
-;здддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+;зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд#
 ;Ё  Subprocedure:  INIT_PAL						Ё
 ;Ё									Ё
 ;Ё  Purpose:  This subprocedure will link the Page Allocation List.	Ё

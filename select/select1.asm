@@ -343,10 +343,10 @@ MEMORY_ALLOCATED:						;AN000;
 	CALL			CURSOROFF			;AN054; SEH moved from earlier in code
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �WELCOME_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #WELCOME_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The WELCOME screen is always presented.
 ;  The screen does not have help, F3 function or input variables.
@@ -386,10 +386,10 @@ WELCOME_SCREEN2:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  ������������������������������������Ŀ
-;  �INTRO_SCREEN			�
-;  �					�
-;  ��������������������������������������
+;  #####################################
+;  #INTRO_SCREEN			#
+;  #					#
+;  ######################################
 ;
 ;  The INTRODUCTION screen is always presented.
 ;  The screen does not have help, F3 function or any variables.

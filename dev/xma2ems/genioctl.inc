@@ -33,7 +33,7 @@ GENERIC_IOCTL_P PROC
 ;³ header error is set by previous versions of the EMS driver that didn't     ³
 ;³ handle the IOCTL.                                                          ³
 ;³                                                                            ³
-;ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+;ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#
 ;³ On entry: ES:BX -> Device driver request header                            ³
 ;³                                                                            ³
 ;³ The IOCTL code will set standard EMS return codes in the packet's function ³
@@ -66,7 +66,7 @@ GENERIC_IOCTL:                        ;                                    @RH6
         PUSH    CS                    ;Set addressability to our data      @RH6
         POP     DS                    ;                                    @RH6
         XOR     AH,AH                 ;Init upper half of user's ret code  @RH6
-                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#
                         ;³ First insure the parameter list is long enough     ³
                         ;³  to input the number of pages needed by WSP        ³
                         ;ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
@@ -74,14 +74,14 @@ GENERIC_IOCTL:                        ;                                    @RH6
         JE      GIO_FCN_CHK             ;Else give invalid len ret code    @RH6
         MOV     AL,90h                  ; and error exit                   @RH6
         JMP     GIP_EXIT                ;                                  @RH6
-                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#
                         ;³ Check for function code 0 (only one available)     ³
 GIO_FCN_CHK:            ;ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
         CMP     GIP.GIO_FCNRC,0         ;                                  @RH6
         JE      GIO_REQNOT0_CHK         ;                                  @RH6
         MOV     AL,EMS_CODE84           ;                                  @RH6
         JMP     GIP_EXIT                ;                                  @RH6
-                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#
                         ;³ Parm list is OK.  Attempt to reserve WSP pages.    ³
 GIO_REQNOT0_CHK:        ;ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
         MOV     BX,GIP.GIO_WSPP         ;BX = requested WSP pages          @RH6
@@ -111,7 +111,7 @@ GIO_OKTOTAL:
         MOV     AL,EMS_CODE88           ;                                  @RH6
         JMP     GIP_EXIT                ;                                  @RH6
 
-                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                        ;ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ#
                         ;³ Remove WSP pages from the end of the free list     ³
                         ;ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 GIO_REMOVE_FREE:

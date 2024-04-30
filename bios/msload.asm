@@ -63,7 +63,9 @@ org	0h
 start:
 	jmp Save_Input_Values
 SYS_Version	dw	EXPECTED_VERSION ;AN001; From VERSIONA.INC file
-Mystacks	dw	64 dup (0)	;AN000; local stack
+; Mystacks	dw	64 dup (0)	;AN000; local stack
+; https://www.os2museum.com/wp/how-not-to-release-historic-source-code/comment-page-1/#comment-381416
+Mystacks	dw	128 dup (0)	;AN000; local stack
 MyStack_ptr	label	word
 
 ;local data

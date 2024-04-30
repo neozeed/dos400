@@ -460,6 +460,8 @@ NOLIST:
 	POP	BX			; back to beginning of new stack area
 	MOV	SPSAVE,AX		; remember where new stack is
 	DEC	AH
+	INC	AX			; Per John Elliot a long standing bug since 2.0
+	INC	AX			; affecting CALL 5 // Licca
 	MOV	ES:WORD PTR [6],AX	; change PSP to show usage of
 	SUB	BX,AX			; new stack area
 	MOV	CL,4

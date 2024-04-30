@@ -18,3 +18,4 @@ lastseg ends			 ;this is a pointer to the end of the pgm     ;A;an000;bgbN000;bg
 										;an000;bgb;AN000;bgb
 DG	GROUP	data,const,code,CSTACK,lastseg					;an000;bgb
 assume	cs:dg,ds:dg,ss:dg,es:dg 						;an000;bgb
+

@@ -8,3 +8,4 @@ include msdos.cl1
 	PUBLIC	DivMesLen
 DivMesLen   DW	$-DivMes	; Length of the above message in bytes
 DIVM001E	label byte
+

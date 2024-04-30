@@ -30,3 +30,4 @@ MAX_NUM_PAGEFRAME equ	 64	;maximum number of page frames MSBIO can
 
 EMSVERSION	equ	40h	;4.0
 
+

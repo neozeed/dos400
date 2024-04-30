@@ -28,3 +28,4 @@ fdisk.exe,
 fdisk.map,
 ..\..\mapper\MAPPER.lib +
 ..\..\inc\comsubs.lib;
+

@@ -30,3 +30,4 @@ NOVAL label word
       RES_POFF	 dw	0	;drive type or beginning of string
       RES_PSEG	 dw	0	;may be string
 
+

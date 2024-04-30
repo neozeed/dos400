@@ -18,3 +18,4 @@ lastseg ends			 ;put last because 'table' writes over memory   ;AN005;bgb
 										;AN000;bgb
 dg	group	data,const,code,cstack,lastseg					;AN000;bgb
 	assume	cs:dg,ds:dg,es:dg,ss:CSTACK					;AN000;bgb
+

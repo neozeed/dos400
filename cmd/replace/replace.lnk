@@ -6,3 +6,4 @@ REPLACE
 NUL
 ..\..\mapper\mapper.lib+
 ..\..\inc\comsubs.lib /STACK:31620;
+

@@ -60,6 +60,6 @@
 :use 26 COMMON36           ;AN001;"Volume Serial Number is %1-%2",CR,LF
 
 :end                                                                            ;AN000;
-lume Serial Number is %1-%2",CR,LF
+lume Serial Number is %1-%2",CR,LF
 
 :end        

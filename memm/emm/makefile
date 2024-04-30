@@ -92,4 +92,4 @@ emmdata.obj:	emmdata.asm $(AINC)
 
 emminc.obj:	emminc.asm $(AINC)
 		$(MASM) $(AFLAGS) emminc.asm,emminc.obj,emminc.lst;
-
+

@@ -60,3 +60,4 @@ copy .\dev\driver\driver.sys %1
 copy .\dev\xma2ems\xma2ems.sys %1
 copy .\dev\xmaem\xmaem.sys %1
 copy .\memm\memm\emm386.sys %1
+

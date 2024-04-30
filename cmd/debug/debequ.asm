@@ -161,3 +161,4 @@ XM_ERR8F equ	8Fh			;an000;error message type
 XM_NOT_INST equ 0ffh			;an000;EMS not inst
 
 ;======================= EMS Equates End =================================
+

@@ -27,3 +27,4 @@ arena_signature_end	EQU 5Ah 	; valid signature, last block in arena
 ;									   ;
 ;	     C	A  V  E  A  T	  P  R	O  G  R  A  M  M  E  R		   ;
 ;----+----+----+----+----+----+----+----+----+----+----+----+----+----+----;
+

@@ -15,7 +15,7 @@ SUBTTL	SELECT7.asm						;AN000;
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      ï¿½ SELECT1.ASM
+;		      þ SELECT1.ASM
 ;		      ;AN000; SELECT2.ASM
 ;		      ;AN000; SELECT3.ASM
 ;		      ;AN000; SELECT4.ASM
@@ -461,3 +461,4 @@ GET_OVERLAY	ENDP						;AN000;
 								;
 SELECT	ENDS							;AN000;
 	END							;AN000;
+

@@ -282,3 +282,4 @@ errLOC_Disk             EQU     2       ; Random Access Mass Storage
 errLOC_Net              EQU     3       ; Network
 errLOC_SerDev           EQU     4       ; Serial Device
 errLOC_Mem              EQU     5       ; Memory
+

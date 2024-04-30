@@ -150,7 +150,7 @@ PCB1	LABEL	WORD		;AN000;
 	DW	PANEL1_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -215,7 +215,7 @@ PCB2	LABEL	WORD		;AN000;
 	DW	PANEL2_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -255,7 +255,7 @@ PCB3	LABEL	WORD		;AN000;
 	DW	PANEL3_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -312,7 +312,7 @@ PCB4	LABEL	WORD		;AN000;
 	DW	PANEL4_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -352,7 +352,7 @@ PCB5	LABEL	WORD		;AN000;
 	DW	PANEL5_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -392,7 +392,7 @@ PCB6	LABEL	WORD		;AN000;
 	DW	PANEL6_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -432,7 +432,7 @@ PCB7	LABEL	WORD		;AN000;
 	DW	PANEL7_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -472,7 +472,7 @@ PCB8	LABEL	WORD		;AN000;
 	DW	PANEL8_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -512,7 +512,7 @@ PCB9	LABEL	WORD		;AN000;
 	DW	PANEL9_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -552,7 +552,7 @@ PCB10	LABEL	WORD		;AN000;
 	DW	PANEL10_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -592,7 +592,7 @@ PCB11	LABEL	WORD		;AN000;
 	DW	PANEL11_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -632,7 +632,7 @@ PCB12	LABEL	WORD		;AN000;
 	DW	PANEL12_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -672,7 +672,7 @@ PCB13	LABEL	WORD		;AN000;
 	DW	PANEL13_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -712,7 +712,7 @@ PCB14	LABEL	WORD		;AN000;
 	DW	PANEL14_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -752,7 +752,7 @@ PCB15	LABEL	WORD		;AN000;
 	DW	PANEL15_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -792,7 +792,7 @@ PCB16	LABEL	WORD		;AN000;
 	DW	PANEL16_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -832,7 +832,7 @@ PCB17	LABEL	WORD		;AN000;
 	DW	PANEL17_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -872,7 +872,7 @@ PCB18	LABEL	WORD		;AN000;
 	DW	PANEL18_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -912,7 +912,7 @@ PCB19	LABEL	WORD		;AN000;
 	DW	PANEL19_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -952,7 +952,7 @@ PCB20	LABEL	WORD		;AN000;
 	DW	PANEL20_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -992,7 +992,7 @@ PCB21	LABEL	WORD		;AN000;
 	DW	PANEL21_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1032,7 +1032,7 @@ PCB22	LABEL	WORD		;AN000;
 	DW	PANEL22_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1072,7 +1072,7 @@ PCB23	LABEL	WORD		;AN000;
 	DW	PANEL23_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1112,7 +1112,7 @@ PCB24	LABEL	WORD		;AN000;
 	DW	PANEL24_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1152,7 +1152,7 @@ PCB25	LABEL	WORD		;AN000;
 	DW	PANEL25_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1192,7 +1192,7 @@ PCB26	LABEL	WORD		;AN000;
 	DW	PANEL26_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1232,7 +1232,7 @@ PCB27	LABEL	WORD		;AN000;
 	DW	PANEL27_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1272,7 +1272,7 @@ PCB28	LABEL	WORD		;AN000;
 	DW	PANEL28_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1312,7 +1312,7 @@ PCB29	LABEL	WORD		;AN000;
 	DW	PANEL29_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1352,7 +1352,7 @@ PCB30	LABEL	WORD		;AN000;
 	DW	PANEL30_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1410,7 +1410,7 @@ PCB31	LABEL	WORD		;AN000;
 	DW	PANEL31_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1450,7 +1450,7 @@ PCB32	LABEL	WORD		;AN000;
 	DW	PANEL32_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1491,7 +1491,7 @@ PCB33	LABEL	WORD		;AN000;
 	DW	PANEL33_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1532,7 +1532,7 @@ PCB34	LABEL	WORD		;AN000;
 	DW	PANEL34_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1573,7 +1573,7 @@ PCB35	LABEL	WORD		;AN000;
 	DW	PANEL35_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1614,7 +1614,7 @@ PCB36	LABEL	WORD		;AN000;
 	DW	PANEL36_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	BLACK_WHITE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1680,7 +1680,7 @@ PCB37	LABEL	WORD		;AN000;
 	DW	PANEL37_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1721,7 +1721,7 @@ PCB38	LABEL	WORD		;AN000;
 	DW	PANEL38_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1762,7 +1762,7 @@ PCB39	LABEL	WORD		;AN000;
 	DW	PANEL39_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1803,7 +1803,7 @@ PCB40	LABEL	WORD		;AN000;
 	DW	PANEL40_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1843,7 +1843,7 @@ PCB41	LABEL	WORD		;AN000;
 	DW	PANEL41_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1883,7 +1883,7 @@ PCB42	LABEL	WORD		;AN000;
 	DW	PANEL42_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1923,7 +1923,7 @@ PCB43	LABEL	WORD		;AN000;
 	DW	PANEL43_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -1963,7 +1963,7 @@ PCB44	LABEL	WORD		;AN000;
 	DW	PANEL44_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2003,7 +2003,7 @@ PCB45	LABEL	WORD		;AN000;
 	DW	PANEL45_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2043,7 +2043,7 @@ PCB46	LABEL	WORD		;AN000;
 	DW	PANEL46_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2083,7 +2083,7 @@ PCB47	LABEL	WORD		;AN000;
 	DW	PANEL47_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2123,7 +2123,7 @@ PCB48	LABEL	WORD		;AN000;
 	DW	PANEL48_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2163,7 +2163,7 @@ PCB49	LABEL	WORD		;AN000;
 	DW	PANEL49_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2203,7 +2203,7 @@ PCB50	LABEL	WORD		;AN000;
 	DW	PANEL50_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2243,7 +2243,7 @@ PCB51	LABEL	WORD		;AN000;
 	DW	PANEL51_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2283,7 +2283,7 @@ PCB52	LABEL	WORD		;AN000;
 	DW	PANEL52_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2323,7 +2323,7 @@ PCB53	LABEL	WORD		;AN000;
 	DW	PANEL53_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2363,7 +2363,7 @@ PCB54	LABEL	WORD		;AN000;
 	DW	PANEL54_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2403,7 +2403,7 @@ PCB55	LABEL	WORD		;AN000;
 	DW	PANEL55_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2443,7 +2443,7 @@ PCB56	LABEL	WORD		;AN000;
 	DW	PANEL56_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2483,7 +2483,7 @@ PCB57	LABEL	WORD		;AN000;
 	DW	PANEL57_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2523,7 +2523,7 @@ PCB58	LABEL	WORD		;AN000;
 	DW	PANEL58_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2563,7 +2563,7 @@ PCB59	LABEL	WORD		;AN000;
 	DW	PANEL59_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2603,7 +2603,7 @@ PCB60	LABEL	WORD		;AN000;
 	DW	PANEL60_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2643,7 +2643,7 @@ PCB61	LABEL	WORD		;AN000;
 	DW	PANEL61_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2683,7 +2683,7 @@ PCB62	LABEL	WORD		;AN000;
 	DW	PANEL62_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2723,7 +2723,7 @@ PCB63	LABEL	WORD		;AN000;
 	DW	PANEL63_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2763,7 +2763,7 @@ PCB64	LABEL	WORD		;AN000;
 	DW	PANEL64_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2803,7 +2803,7 @@ PCB65	LABEL	WORD		;AN000;
 	DW	PANEL65_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2843,7 +2843,7 @@ PCB66	LABEL	WORD		;AN000;
 	DW	PANEL66_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2883,7 +2883,7 @@ PCB67	LABEL	WORD		;AN000;
 	DW	PANEL67_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2940,7 +2940,7 @@ PCB68	LABEL	WORD		;AN000;
 	DW	PANEL68_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -2980,7 +2980,7 @@ PCB69	LABEL	WORD		;AN000;
 	DW	PANEL69_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3020,7 +3020,7 @@ PCB70	LABEL	WORD		;AN000;
 	DW	PANEL70_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3060,7 +3060,7 @@ PCB71	LABEL	WORD		;AN000;
 	DW	PANEL71_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3100,7 +3100,7 @@ PCB72	LABEL	WORD		;AN000;
 	DW	PANEL72_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3140,7 +3140,7 @@ PCB73	LABEL	WORD		;AN000;
 	DW	PANEL73_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3180,7 +3180,7 @@ PCB74	LABEL	WORD		;AN000;
 	DW	PANEL74_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3220,7 +3220,7 @@ PCB75	LABEL	WORD		;AN000;
 	DW	PANEL75_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3260,7 +3260,7 @@ PCB76	LABEL	WORD		;AN000;
 	DW	PANEL76_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3300,7 +3300,7 @@ PCB77	LABEL	WORD		;AN000;
 	DW	PANEL77_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3340,7 +3340,7 @@ PCB78	LABEL	WORD		;AN000;
 	DW	PANEL78_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3380,7 +3380,7 @@ PCB79	LABEL	WORD		;AN000;
 	DW	PANEL79_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3420,7 +3420,7 @@ PCB80	LABEL	WORD		;AN000;
 	DW	PANEL80_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3460,7 +3460,7 @@ PCB81	LABEL	WORD		;AN000;
 	DW	PANEL81_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3500,7 +3500,7 @@ PCB82	LABEL	WORD		;AN000;
 	DW	PANEL82_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3540,7 +3540,7 @@ PCB83	LABEL	WORD		;AN000;
 	DW	PANEL83_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3580,7 +3580,7 @@ PCB84	LABEL	WORD		;AN000;
 	DW	PANEL84_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3620,7 +3620,7 @@ PCB85	LABEL	WORD		;AN000;
 	DW	PANEL85_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3660,7 +3660,7 @@ PCB86	LABEL	WORD		;AN000;
 	DW	PANEL86_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3700,7 +3700,7 @@ PCB87	LABEL	WORD		;AN000;
 	DW	PANEL87_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3740,7 +3740,7 @@ PCB88	LABEL	WORD		;AN000;
 	DW	PANEL88_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3780,7 +3780,7 @@ PCB89	LABEL	WORD		;AN000;
 	DW	PANEL89_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3820,7 +3820,7 @@ PCB90	LABEL	WORD		;AN000;
 	DW	PANEL90_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3860,7 +3860,7 @@ PCB91	LABEL	WORD		;AN000;
 	DW	PANEL91_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3900,7 +3900,7 @@ PCB92	LABEL	WORD		;AN000;
 	DW	PANEL92_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3940,7 +3940,7 @@ PCB93	LABEL	WORD		;AN000;
 	DW	PANEL93_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -3980,7 +3980,7 @@ PCB94	LABEL	WORD		;AN000;
 	DW	PANEL94_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4020,7 +4020,7 @@ PCB95	LABEL	WORD		;AN000;
 	DW	PANEL95_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4060,7 +4060,7 @@ PCB96	LABEL	WORD		;AN000;
 	DW	PANEL96_W      ;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4100,7 +4100,7 @@ PCB97	LABEL	WORD		;AN000;
 	DW	PANEL97_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_RED	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4140,7 +4140,7 @@ PCB98	LABEL	WORD		;AN000;
 	DW	PANEL98_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4180,7 +4180,7 @@ PCB99	LABEL	WORD		;AN000;
 	DW	PANEL99_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4220,7 +4220,7 @@ PCB100	LABEL	WORD		;AN000;
 	DW	PANEL100_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4260,7 +4260,7 @@ PCB101	LABEL	WORD		;AN000;
 	DW	PANEL101_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4300,7 +4300,7 @@ PCB102	LABEL	WORD		;AN000;
 	DW	PANEL102_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4340,7 +4340,7 @@ PCB103	LABEL	WORD		;AN000;
 	DW	PANEL103_W	;AN000;text char width of panel
 	DW	0		;AN000;Max poss panel sizing in text
 	DW	WHITE_BLUE	;AN000;Index number of log color
-	DB	'О©╫д©О©╫О©╫О©╫О©╫О©╫'      ;AN000;8 log border characters
+	DB	'зд©ЁЁюды'      ;AN000;8 log border characters
 	DW	0		;AN000;Length compress panel in mem
 	DW	0		;AN000;Off addr compressed panel
 	DW	0		;AN000;Seg addr compressed panel
@@ -4371,3 +4371,4 @@ PCB103	LABEL	WORD		;AN000;
 
 CODE	ENDS			;AN000;
 	END			;AN000;
+

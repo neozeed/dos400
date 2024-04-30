@@ -41,3 +41,4 @@ DISPLAY_S_PATH		EQU	32	;AN000;
 P_S_PATH_FILE0		EQU	33	;AN000;
 P_S_PATH_FILE1		EQU	34	;AN000;
 ;******************** END OF XCPYMAIN.MSG **************************************
+

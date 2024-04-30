@@ -27,3 +27,4 @@
 :use 22 EXTEND37	   ;"Code page mismatch"                         ;AN000;
 :DEF 23 "Files compare ok",CR,LF                                         ;AN000;
 :end									 ;AN000;
+

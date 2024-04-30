@@ -15,12 +15,12 @@ SUBTTL	SELECT9.asm
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      ï¿½ SELECT1.ASM
-;		      ï¿½ SELECT2.ASM
-;		      ï¿½ SELECT3.ASM
-;		      ï¿½ SELECT4.ASM
-;		      ï¿½ SELECT5.ASM
-;		      ï¿½ SELECT6.ASM
+;		      þ SELECT1.ASM
+;		      þ SELECT2.ASM
+;		      þ SELECT3.ASM
+;		      þ SELECT4.ASM
+;		      þ SELECT5.ASM
+;		      þ SELECT6.ASM
 ;
 ;
 ;  Module contains code for :
@@ -515,3 +515,4 @@ Free_Parser:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SELECT	ENDS
 	END
+

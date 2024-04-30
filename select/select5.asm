@@ -15,12 +15,12 @@ SUBTTL	SELECT5.asm						;AN000;
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      О©╫ SELECT1.ASM
-;		      О©╫ SELECT2.ASM
-;		      О©╫ SELECT3.ASM
-;		      О©╫ SELECT4.ASM
-;		      О©╫ SELECT5.ASM
-;		      О©╫ SELECT6.ASM
+;		      Ч SELECT1.ASM
+;		      Ч SELECT2.ASM
+;		      Ч SELECT3.ASM
+;		      Ч SELECT4.ASM
+;		      Ч SELECT5.ASM
+;		      Ч SELECT6.ASM
 ;
 ;  Module contains code for :
 ;	- VDISK screen
@@ -87,10 +87,10 @@ SELECT	SEGMENT PARA PUBLIC 'SELECT'                            ;AN000;segment fo
 	EXTRN	EXIT_SELECT:NEAR				;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©
-;  О©╫VDISK_SCREEN			О©╫
-;  О©╫					О©╫
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+;  здддддддддддддддддддддддддддддддддддд©
+;  ЁVDISK_SCREEN			Ё
+;  Ё					Ё
+;  юдддддддддддддддддддддддддддддддддддды
 ;
 ;  The VDISK PARAMETERS SCREEN is presented if the user selected to
 ;  install virtual disk support and the user wants to view/change parameters.
@@ -122,10 +122,10 @@ VDISK_SCREEN:							;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©
-;  О©╫CONFIG_SYS_SCREEN			О©╫
-;  О©╫					О©╫
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+;  здддддддддддддддддддддддддддддддддддд©
+;  ЁCONFIG_SYS_SCREEN			Ё
+;  Ё					Ё
+;  юдддддддддддддддддддддддддддддддддддды
 ;
 ;  The CONFIG.SYS PARAMETERS SCREEN is presented if the user selected to
 ;  view/change SELECT generated commands ( F_REVIEW = 2 ).
@@ -222,10 +222,10 @@ CONFIG_SYS_SCREEN:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©
-;  О©╫FIRST_DISK_SCREEN			О©╫
-;  О©╫					О©╫
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+;  здддддддддддддддддддддддддддддддддддд©
+;  ЁFIRST_DISK_SCREEN			Ё
+;  Ё					Ё
+;  юдддддддддддддддддддддддддддддддддддды
 ;
 ;  The PARTITION FIXED DISK SCREEN is presented if the first fixed drive
 ;  exists and is completely unused.
@@ -251,11 +251,11 @@ FIRST_DISK_SCREEN:						;AN000;
 	.ENDIF							;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©
-;  О©╫MAKE_BACKUP_DISKETTE		О©╫
-;  О©╫					О©╫
-;  О©╫					О©╫
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+;  здддддддддддддддддддддддддддддддддддд©
+;  ЁMAKE_BACKUP_DISKETTE		Ё
+;  Ё					Ё
+;  Ё					Ё
+;  юдддддддддддддддддддддддддддддддддддды
 ;
 ;	WE NEED TO MAKE A DUPLICATE OF THE SELECT/SHELL DISKETTE 
 ;	FOR R/W PURPOSES!
@@ -323,8 +323,8 @@ MAKE_BACKUP_DISKETTE:						;AN000;
 	OR  SEL_FLG,INSTALLRW					;AN000; indicate INSTALL diskette is R/W
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-; О©╫ Create the CONFIG.340, AUTOEXEC.340, and SHELL.BAT on the	О©╫
-; О©╫ INSTALL COPY diskette in drive A:				О©╫
+; д Create the CONFIG.340, AUTOEXEC.340, and SHELL.BAT on the	д
+; д INSTALL COPY diskette in drive A:				д
 ;  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	CREATE_CONFIG		S_CONFIG_NEW, N_RETCODE 	;AN000;
@@ -345,11 +345,11 @@ MAKE_BACKUP_DISKETTE:						;AN000;
 	.ENDIF							;AN000;DT
 								;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©
-;  О©╫DISK_PARTITION_OPTION		О©╫
-;  О©╫					О©╫
-;  О©╫					О©╫
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+;  здддддддддддддддддддддддддддддддддддд©
+;  ЁDISK_PARTITION_OPTION		Ё
+;  Ё					Ё
+;  Ё					Ё
+;  юдддддддддддддддддддддддддддддддддддды
 ;
 ;	If the first fixed disk is not new (existing partition)
 ;	goto different screen.	Else present screen with partition
@@ -479,11 +479,11 @@ FDISK_ERROR:							;AN000;
 	GOTO	       INSTALL_ERROR				;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©
-;  О©╫BOTH_DISK_SCREEN			О©╫
-;  О©╫					О©╫
-;  О©╫					О©╫
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+;  здддддддддддддддддддддддддддддддддддд©
+;  ЁBOTH_DISK_SCREEN			Ё
+;  Ё					Ё
+;  Ё					Ё
+;  юдддддддддддддддддддддддддддддддддддды
 ;
 ;	Ask user if they want to change the existing partition
 ;	layout or leave it the same (for both disks if 2nd exists).
@@ -573,3 +573,4 @@ GET_ENTER_KEY ENDP						;AN000;DT
 								;
 SELECT	ENDS							;AN000;
 	END							;AN000;
+

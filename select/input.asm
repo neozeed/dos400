@@ -105,7 +105,7 @@ WR_ICB1        DW   ICB_BEN+ICB_RTA+ICB_LFA+ICB_BKS ;AN000;option word one
 	       DW   0			     ;AN000;offset of plus sign string
 	       DW   0			     ;AN000;segment of plus sign string
 					     ;
-WR_PATH_CHAR  DB   "'",',0-9,,a-z,,A-Z,,ï¿½-ï¿½, $!"#%&()-.@\`_{}~^,,,' ;AN000;
+WR_PATH_CHAR  DB   "'",',0-9,,a-z,,A-Z,,€-þ, $!"#%&()-.@\`_{}~^,,,' ;AN000;
 WR_PATH_CHAR_LEN  EQU ($-WR_PATH_CHAR)	     ;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
@@ -213,7 +213,7 @@ WR_ICB3        DW   ICB_BEN+ICB_RTA+ICB_LFA+ICB_BKS ;AN000;option word one
 	       DW   0			     ;AN000;segment of plus sign string
 					     ;;;
 					       ;
-WR_APPEND_CHAR	DB   "'",',0-9,,a-z,,A-Z,,ï¿½-ï¿½, ;$!"#%&()-.:@\`_{}~^,,,' ;AN000;
+WR_APPEND_CHAR	DB   "'",',0-9,,a-z,,A-Z,,€-þ, ;$!"#%&()-.:@\`_{}~^,,,' ;AN000;
 WR_APPEND_CHAR_LEN  EQU ($-WR_APPEND_CHAR)     ;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
@@ -321,7 +321,7 @@ WR_ICB5        DW   ICB_BEN+ICB_RTA+ICB_LFA+ICB_BKS ;AN000;option word one
 	       DW   0			     ;AN000;segment of plus sign string
 					     ;;;;;;;;;;;;;
 							 ;
-WR_PROMPT_CHAR	DB   "'",',0-9,,a-z,,A-Z,,ï¿½-ï¿½,\/ $!"#%()*+-.;@`[]_{}~,,,' ;AN000;
+WR_PROMPT_CHAR	DB   "'",',0-9,,a-z,,A-Z,,€-ÿ,\/ $!"#%()*+-.;@`[]_{}~,,,' ;AN000;
 WR_PROMPT_CHAR_LEN  EQU ($-WR_PROMPT_CHAR)		 ;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
@@ -1728,7 +1728,7 @@ KD_PLUS        DB   43,0		     ;AN000;ASCII plus sign
 ; Define Buffers and Strings
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-WR_ALLOW_CHAR  DB   ', -ï¿½,'                  ;AN000;
+WR_ALLOW_CHAR  DB   ', -þ,'                  ;AN000;
 WR_ALLOW_CHAR_LEN  EQU ($-WR_ALLOW_CHAR)     ;AN000;
 WR_ALLOW_NUM   DB   ' ,0-9,'                 ;AN000;
 WR_ALLOW_NUM_LEN   EQU ($-WR_ALLOW_NUM)      ;AN000;

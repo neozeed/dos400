@@ -15,12 +15,12 @@ SUBTTL	SELECT5A.asm						;AN000;
 ;
 ;		  Panel flow is defined in the following files:
 ;
-;		      О©╫ SELECT1.ASM
-;		      О©╫ SELECT2.ASM
-;		      О©╫ SELECT3.ASM
-;		      О©╫ SELECT4.ASM
-;		      О©╫ SELECT5.ASM
-;		      О©╫ SELECT6.ASM
+;		      Ч SELECT1.ASM
+;		      Ч SELECT2.ASM
+;		      Ч SELECT3.ASM
+;		      Ч SELECT4.ASM
+;		      Ч SELECT5.ASM
+;		      Ч SELECT6.ASM
 ;
 ;  Module contains code for :
 ;	- Date/Time screen
@@ -64,10 +64,10 @@ SELECT	SEGMENT PARA PUBLIC 'SELECT'                            ;AN000;segment fo
 	EXTRN	EXIT_SELECT:NEAR				;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д©
-;  О©╫DATE_TIME_SCREEN			О©╫
-;  О©╫					О©╫
-;  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+;  здддддддддддддддддддддддддддддддддддд©
+;  ЁDATE_TIME_SCREEN			Ё
+;  Ё					Ё
+;  юдддддддддддддддддддддддддддддддддддды
 ;
 ;  The INSTALL DATE and TIME SCREEN is presented if the active date is 1/1/80.
 ;  If the user is installing to drive C: , this is the first screen presented

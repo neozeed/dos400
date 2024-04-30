@@ -51,3 +51,4 @@ COLOR_TABLE	   LABEL BYTE						       ;AN000;
     MODE_TABLE	 < 5, 2,,  2, 320, 200, 40, 25> ; mode	5		       ;AN000;
     MODE_TABLE	 < 6, 2,,  2, 640, 200, 80, 25> ; mode	6		       ;AN000;
 COLOR_NUM	 EQU  ($ - COLOR_TABLE)/(TYPE MODE_TABLE)		       ;AN000;
+

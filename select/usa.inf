@@ -22,52 +22,52 @@ IF SCROLL				;A000;
 ;
 ;
 ;	<R1>	The quotation marks have to left-right justified
-;		##############################################
-;		# The quotation marks (') tell SELECT where   #
-;		# to start wrapping the text onto the next    #
-;		# line.  The assembler line immediately after #
-;		# the first text line automatically calculates#
-;		# the length of this field.  The right border #
-;		# of the text can be adjusted freely - a ruler#
-;		# is drawn for each entry to help in centering#
-;		# text. 				      #
-;		###############################################
+;		ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+;		³ The quotation marks (') tell SELECT where   ³
+;		³ to start wrapping the text onto the next    ³
+;		³ line.  The assembler line immediately after ³
+;		³ the first text line automatically calculates³
+;		³ the length of this field.  The right border ³
+;		³ of the text can be adjusted freely - a ruler³
+;		³ is drawn for each entry to help in centering³
+;		³ text. 				      ³
+;		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 ;
 ;	<R2>	The '[' and ']' input field markers cannot be moved
-;		##############################################
-;		# These characters must remain in the same    #
-;		# position.  They define the boundries of     #
-;		# input fields. 			      #
-;		###############################################
+;		ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+;		³ These characters must remain in the same    ³
+;		³ position.  They define the boundries of     ³
+;		³ input fields. 			      ³
+;		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 ;
 ;	<R3>	The panel will be centered in an 80 column screen
-;		##############################################
-;		# This panel will be centered on the screen   #
-;		# when it is displayed.  Please translate     #
-;		# accordingly.				      #
-;		###############################################
+;		ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+;		³ This panel will be centered on the screen   ³
+;		³ when it is displayed.  Please translate     ³
+;		³ accordingly.				      ³
+;		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 ;
 ;	<R4>	The number of lines for the entry MUST be maintained
-;		##############################################
-;		# The number of lines (from top to bottom)    #
-;		# must not change.  Translated text must      #
-;		# conform to the existing number of lines.    #
-;		###############################################
+;		ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+;		³ The number of lines (from top to bottom)    ³
+;		³ must not change.  Translated text must      ³
+;		³ conform to the existing number of lines.    ³
+;		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 ;
 ;	<R5>	The width of the entry must not exceed the RULER provided.
-;		##############################################
-;		# Translated text should remain the same      #
-;		# width (do not exceed the ruler).  Otherwise #
-;		# the text will not fit within the panel.     #
-;		###############################################
+;		ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+;		³ Translated text should remain the same      ³
+;		³ width (do not exceed the ruler).  Otherwise ³
+;		³ the text will not fit within the panel.     ³
+;		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 ;
 ;	<R9>	DO NOT TRANSLATE OR CHANGE!!!!
-;		##############################################
-;		# The information contained in the quotations #
-;		# should NEVER be changed.  These fields are  #
-;		# established for the size of the help text   #
-;		# or error panels.			      #
-;		###############################################
+;		ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+;		³ The information contained in the quotations ³
+;		³ should NEVER be changed.  These fields are  ³
+;		³ established for the size of the help text   ³
+;		³ or error panels.			      ³
+;		ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
@@ -77,7 +77,7 @@ IF SCROLL				;A000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST1	DB  ' 1. Minimum DOS function; maximum program workspace ';AN000;
 SCB_LIST1_W	EQU ($-SCB_LIST1)					  ;AN000;
@@ -95,7 +95,7 @@ SCB_LIST1_N	EQU ($-SCB_LIST1)/SCB_LIST1_W				  ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST2	DB  ' 1. Accept predefined country and keyboard   ';AN000;
 SCB_LIST2_W	EQU ($-SCB_LIST2)				   ;AN000;
@@ -111,7 +111,7 @@ SCB_LIST2_N	EQU ($-SCB_LIST2)/SCB_LIST2_W			   ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST23	LABEL	BYTE			       ;AN000;
 SCB_LIST3	DB  ' United States             (001) ';AN000;
@@ -152,7 +152,7 @@ SCB_LIST23_N	EQU ($-SCB_LIST23)/SCB_LIST23_W        ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST24	LABEL	BYTE			       ;AN000;
 SCB_LIST5	DB  ' Belgian                    (BE) ';AN000;
@@ -194,7 +194,7 @@ SCB_LIST24_N	EQU ($-SCB_LIST24)/SCB_LIST24_W        ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST7	DB  ' 1. French 120       (120) ';AN000;
 SCB_LIST7_W	EQU ($-SCB_LIST7)		 ;AN000;
@@ -210,7 +210,7 @@ SCB_LIST7_N	EQU ($-SCB_LIST7)/SCB_LIST7_W	 ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST8	DB  ' 1. Italian 142      (142) ';AC090;
 SCB_LIST8_W	EQU ($-SCB_LIST8)		 ;AN000;
@@ -226,7 +226,7 @@ SCB_LIST8_N	EQU ($-SCB_LIST8)/SCB_LIST8_W	 ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST9	DB  ' 1. UK English 168   (168) ';AN000;
 SCB_LIST9_W	EQU ($-SCB_LIST9)		 ;AN000;
@@ -242,7 +242,7 @@ SCB_LIST9_N	EQU ($-SCB_LIST9)/SCB_LIST9_W	 ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST10	DB  ' 1. C '                     ;AN000;
 SCB_LIST10_W	EQU ($-SCB_LIST10)		 ;AN000;
@@ -258,7 +258,7 @@ SCB_LIST10_N	EQU ($-SCB_LIST10)/SCB_LIST10_W  ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST11	DB  ' '                         ;AN000;
 SCB_LIST11_W	EQU ($-SCB_LIST11)		;AN000;
@@ -272,7 +272,7 @@ SCB_LIST11_N	EQU ($-SCB_LIST11)/SCB_LIST11_W ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST12	DB  ' 1. LPT1 - First port  '    ;AN000;
 SCB_LIST12_W	EQU ($-SCB_LIST12)		 ;AN000;
@@ -290,7 +290,7 @@ SCB_LIST12_N	EQU ($-SCB_LIST12)/SCB_LIST12_W  ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST13	DB  ' 1. COM1 - First port  '    ;AN000;
 SCB_LIST13_W	EQU ($-SCB_LIST13)		 ;AN000;
@@ -307,7 +307,7 @@ SCB_LIST13_N	EQU ($-SCB_LIST13)/SCB_LIST13_W  ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST14	DB  ' 1. None               '    ;AN000;
 SCB_LIST14_W	EQU ($-SCB_LIST14)		 ;AN000;
@@ -324,7 +324,7 @@ SCB_LIST14_N	EQU ($-SCB_LIST14)/SCB_LIST14_W  ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST15	DB  ' 1. Accept configuration and continue with installation ';AC079;SEH ;AN000;
 SCB_LIST15_W	EQU ($-SCB_LIST15)					      ;AN000;
@@ -340,7 +340,7 @@ SCB_LIST15_N	EQU ($-SCB_LIST15)/SCB_LIST15_W 			      ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST16	DB  ' Code Page Switching                      ';AN000;
 SCB_LIST16_W	EQU ($-SCB_LIST16)				;AN000;
@@ -362,7 +362,7 @@ SCB_LIST16_N	EQU ($-SCB_LIST16)/SCB_LIST16_W 		;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST17	DB  ' Code Page Switching                 ';AN000;
 SCB_LIST17_W	EQU ($-SCB_LIST17)			   ;AN000;
@@ -381,7 +381,7 @@ SCB_LIST17_N	EQU ($-SCB_LIST17)/SCB_LIST17_W 	   ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST18	DB  ' 1. Let SELECT define partition sizes ';AN000;
 SCB_LIST18_W	EQU ($-SCB_LIST18)			    ;AN000;
@@ -397,7 +397,7 @@ SCB_LIST18_N	EQU ($-SCB_LIST18)/SCB_LIST18_W 	    ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST19	DB  ' 1. Leave disk unchanged            ';AN000;
 SCB_LIST19_W	EQU ($-SCB_LIST19)			  ;AN000;
@@ -413,7 +413,7 @@ SCB_LIST19_N	EQU ($-SCB_LIST19)/SCB_LIST19_W 	  ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST20	DB  ' 1. Format fixed disk partition        ';AN000;
 SCB_LIST20_W	EQU ($-SCB_LIST20)			     ;AN000;
@@ -429,7 +429,7 @@ SCB_LIST20_N	EQU ($-SCB_LIST20)/SCB_LIST20_W 	     ;AN000;
 ;	<R1>	The quotation marks have to left-right justified			      ;AN000;JW
 ;	<R4>	The number of lines for the entry MUST be maintained			      ;AN000;JW
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;						      ;AN000;JW
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8   ;AN000;JW
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8   ;AN000;JW
 
 SCB_LIST26	DB  ' 1. Install all DOS files on fixed disk               '                      ;AC000;JW
 SCB_LIST26_W	EQU ($-SCB_LIST26)							     ;AN000;JW
@@ -445,7 +445,7 @@ SCB_LIST26_N	EQU ($-SCB_LIST26)/SCB_LIST26_W 					     ;AN000;JW
 ;	<R1>	The quotation marks have to left-right justified			      ;AN111;JW
 ;	<R4>	The number of lines for the entry MUST be maintained			      ;AN111;JW
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;						      ;AN111;JW
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8   ;AN111;JW
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8   ;AN111;JW
 
 SCB_LIST27	DB  ' 1. C '                                                                   ;AN111;JW
 SCB_LIST27_W	EQU ($-SCB_LIST27)							      ;AN111;JW
@@ -461,7 +461,7 @@ SCB_LIST27_N	EQU ($-SCB_LIST27)/SCB_LIST27_W 					      ;AN111;JW
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R4>	The number of lines for the entry MUST be maintained
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	  |---------1---------2---------3---------4---------5---------6---------7---------8
+;	  ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 SCB_LIST28	DB  ' 1. Install the MS-DOS Shell        '
 SCB_LIST28_W	EQU ($-SCB_LIST28)					      ;AN000;
@@ -524,7 +524,7 @@ PANEL1_L	EQU	($-PANEL1)/PANEL1_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL2	LABEL	BYTE								    ;AN000;
 	DB   '                         Introduction                                ';AN000;
@@ -587,7 +587,7 @@ PANEL3_L	EQU	($-PANEL3)/PANEL3_W			      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL4	LABEL	BYTE							;AN000;
 	DB   '                 Specify Function and Workspace          ';AN000;
@@ -609,7 +609,7 @@ PANEL4_L	EQU	($-PANEL4)/PANEL4_W				;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL5	LABEL	BYTE						      ;AN000;
 	DB   '                   Select Country and Keyboard'         ;AN000;
@@ -633,7 +633,7 @@ PANEL5_L	EQU	($-PANEL5)/PANEL5_W			      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL6	LABEL	BYTE						    ;AN000;
 	DB   '                         Country Selection'           ;AN000;
@@ -650,7 +650,7 @@ PANEL6_L	EQU		($-PANEL6)/PANEL6_W		    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL7	LABEL	BYTE						    ;AN000;
 	DB   '                        Keyboard Selection'           ;AN000;
@@ -667,7 +667,7 @@ PANEL7_L	EQU	($-PANEL7)/PANEL7_W			    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL8	LABEL	BYTE								;AN000;
 	DB   '                    Keyboard Layout Selection                    ';AN000;
@@ -688,7 +688,7 @@ PANEL8_L	EQU	($-PANEL8)/PANEL8_W					;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL9  LABEL	 BYTE					      ;AN000;
 	DB   '                      Select Installation Drive';AN000;
@@ -707,7 +707,7 @@ PANEL9_L	EQU	($-PANEL9)/PANEL9_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL10  LABEL	 BYTE							;AN000;
 	DB   '                      Specify DOS Location               ';AN000;
@@ -736,7 +736,7 @@ PANEL10_L	EQU	($-PANEL10)/PANEL10_W				;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL11  LABEL	 BYTE						 ;AN000;
 	DB   '                        Number of Printers        ';AN000;
@@ -755,7 +755,7 @@ PANEL11_L	EQU	($-PANEL11)/PANEL11_W			 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL12  LABEL	 BYTE						      ;AN000;
 	DB   '                        Printer Selection              ';AN000;
@@ -777,7 +777,7 @@ PANEL12_L	EQU	($-PANEL12)/PANEL12_W			      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL13  LABEL	 BYTE					  ;AN000;
 	DB   '                      Parallel Printer Port';AN000;
@@ -797,7 +797,7 @@ PANEL13_L	EQU	($-PANEL13)/PANEL13_W		  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL14  LABEL	 BYTE						     ;AN000;
 	DB   '                        Serial Printer Port           ';AN000;
@@ -825,7 +825,7 @@ PANEL14_L	EQU	($-PANEL14)/PANEL14_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL15  LABEL	 BYTE						  ;AN000;
 	DB   '                     Installation Options          ';AN000;
@@ -846,7 +846,7 @@ PANEL15_L	EQU	($-PANEL15)/PANEL15_W			  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL16  LABEL	 BYTE							 ;AN000;
 	DB   '                      Review Selections                   ';AN000;
@@ -870,7 +870,7 @@ PANEL16_L	EQU	($-PANEL16)/PANEL16_W				 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL17 LABEL BYTE					     ;AN028;
 	DB   'The printer you chose is not supported.       ';AN028;
@@ -888,7 +888,7 @@ PANEL17_L	EQU	($-PANEL17)/PANEL17_W		     ;AN028;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL18  LABEL	 BYTE						     ;AN000;
 	DB   '                        DOS Parameters              '  ;AN000;
@@ -916,7 +916,7 @@ PANEL18_L	EQU	($-PANEL18)/PANEL18_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL19  LABEL	 BYTE						     ;AN000;
 	DB   '                     DOS SHELL Parameters           '  ;AN000;
@@ -937,7 +937,7 @@ PANEL19_L	EQU	($-PANEL19)/PANEL19_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL20  LABEL	 BYTE						   ;AN000;
 	DB   'An unrecoverable error occurred while installing'    ;AN000;
@@ -952,7 +952,7 @@ PANEL20_L	EQU	($-PANEL20)/PANEL20_W			   ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL21  LABEL	 BYTE						     ;AN000;
 	DB   '                      FASTOPEN Parameters           '  ;AN000;
@@ -973,7 +973,7 @@ PANEL21_L	EQU	($-PANEL21)/PANEL21_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL22  LABEL	 BYTE						     ;AN000;
 	DB   '                         SHARE Parameters           '  ;AN000;
@@ -994,7 +994,7 @@ PANEL22_L	EQU	($-PANEL22)/PANEL22_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL23  LABEL	 BYTE						     ;AN000;
 	DB   '                       GRAPHICS Parameters          '  ;AN000;
@@ -1015,7 +1015,7 @@ PANEL23_L	EQU	($-PANEL23)/PANEL23_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL24  LABEL	 BYTE						     ;AN000;
 	DB   '                    Expanded Memory Parameters      '  ;AN000;
@@ -1039,7 +1039,7 @@ PANEL24_L	EQU	($-PANEL24)/PANEL24_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL25  LABEL	 BYTE						     ;AN000;
 	DB   '                    RAMDRIVE Parameters             '  ;AN000;
@@ -1060,7 +1060,7 @@ PANEL25_L	EQU	($-PANEL25)/PANEL25_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL26  LABEL	 BYTE						     ;AN000;
 	DB   '                      Configuration Parameters'        ;AN000;
@@ -1087,7 +1087,7 @@ PANEL26_L	EQU	($-PANEL26)/PANEL26_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL27  LABEL	 BYTE								 ;AN000;
 	DB   '                       Partition Fixed Disk                       ';AN000;
@@ -1113,7 +1113,7 @@ PANEL27_L	EQU	($-PANEL27)/PANEL27_W					 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL28  LABEL	 BYTE								 ;AN000;
 	DB   '                       Partition Fixed Disk                       ';AN000;
@@ -1139,7 +1139,7 @@ PANEL28_L	EQU	($-PANEL28)/PANEL28_W					 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL29  LABEL	 BYTE						     ;AN000;
 	DB   'You must restart your computer to continue.'           ;AN000;
@@ -1153,7 +1153,7 @@ PANEL29_L	EQU	($-PANEL29)/PANEL29_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL30  LABEL	 BYTE							  ;AN000;
 	DB   '                          Date and Time'                    ;AN000;
@@ -1186,7 +1186,7 @@ PANEL30_L	EQU	($-PANEL30)/PANEL30_W				  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL31  LABEL	 BYTE						       ;AN000;
 	DB   '                    Format Fixed Disk Drive'             ;AN000;
@@ -1206,7 +1206,7 @@ PANEL31_L	EQU	($-PANEL31)/PANEL31_W			       ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL32  LABEL	 BYTE					    ;AN000;
 	DB   '         Continuing Installation'             ;AN000;
@@ -1220,7 +1220,7 @@ PANEL32_L	EQU	($-PANEL32)/PANEL32_W		    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL33  LABEL	 BYTE					      ;AN028;
 	DB   'System does not support selected keyboard.     ';AN028;
@@ -1238,7 +1238,7 @@ PANEL33_L	EQU	($-PANEL33)/PANEL33_W		      ;AN028;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL34  LABEL	 BYTE					    ;AN000;
 	DB   '        Installation Complete'                ;AN000;
@@ -1252,7 +1252,7 @@ PANEL34_L	EQU	($-PANEL34)/PANEL34_W		    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL35  LABEL	 BYTE					     ;AN028;
 	DB 'Installation of MS-DOS 4.0 is complete.         ';AN028;
@@ -1273,23 +1273,23 @@ PANEL35_L	EQU	($-PANEL35)/PANEL35_W		     ;AN028;
 ;
 ;	<R9>	DO NOT TRANSLATE OR CHANGE!!!!
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5----|
+;	      ³---------1---------2---------3---------4---------5----³
 
 PANEL36  LABEL	 BYTE					      ;AN000;
-	DB   '#######################################################';AN000;
+	DB   'ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿';AN000;
 PANEL36_W	EQU	($-PANEL36)			      ;AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '#######################################################';AN000;
-	DB   '#                                                      #';AN000;
-	DB   '########################################################';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   'ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´';AN000;
+	DB   '³                                                      ³';AN000;
+	DB   'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ';AN000;
 PANEL36_L	EQU	($-PANEL36)/PANEL36_W		      ;AN000;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1301,7 +1301,7 @@ PANEL36_L	EQU	($-PANEL36)/PANEL36_W		      ;AN000;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 PANEL37  LABEL	 BYTE					      ;AN000;
-	DB '################################################################################';AN000;
+	DB 'ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ';AN000;
 PANEL37_W	EQU	($-PANEL37)			      ;AN000;
 PANEL37_L	EQU	($-PANEL37)/PANEL37_W		      ;AN000;
 
@@ -1313,10 +1313,10 @@ PANEL37_L	EQU	($-PANEL37)/PANEL37_W		      ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R3>	The panel will be centered in an 80 column screen
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL38  LABEL	 BYTE					      ;AN000;
-	DB 'Press Enter (##) to continue or Esc to Cancel'   ;AN000;
+	DB 'Press Enter (ÄÙ) to continue or Esc to Cancel'   ;AN000;
 PANEL38_W	EQU	($-PANEL38)			      ;AN000;
 PANEL38_L	EQU	($-PANEL38)/PANEL38_W		      ;AN000;
 
@@ -1327,7 +1327,7 @@ PANEL38_L	EQU	($-PANEL38)/PANEL38_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL39  LABEL	 BYTE					      ;AN000;
 	DB 'Printer...........  '                             ;AN000;
@@ -1341,7 +1341,7 @@ PANEL39_L	EQU	($-PANEL39)/PANEL39_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL40  LABEL	 BYTE					      ;AN000;
 	DB   ' F3=Exit '                                      ;AN000;
@@ -1355,7 +1355,7 @@ PANEL40_L	EQU	($-PANEL40)/PANEL40_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL41  LABEL	 BYTE					      ;AN000;
 	DB 'Fixed Disk........  '                             ;AC000;JW
@@ -1369,7 +1369,7 @@ PANEL41_L	EQU	($-PANEL41)/PANEL41_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL42  LABEL	 BYTE				 ;AN000;
 	DB 'Logical Drive.....  :'               ;AC000;JW
@@ -1383,7 +1383,7 @@ PANEL42_L	EQU	($-PANEL42)/PANEL42_W	 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL43  LABEL	 BYTE				 ;AN000;
 	DB 'Press Ctrl+Alt+Del to continue with DOS installation.';AN000;
@@ -1397,7 +1397,7 @@ PANEL43_L	EQU	($-PANEL43)/PANEL43_W	 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL44  LABEL	 BYTE				  ;AN000;
 	DB 'Copying from OPERATING diskette . . .';AN000;
@@ -1411,7 +1411,7 @@ PANEL44_L	EQU	($-PANEL44)/PANEL44_W	  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL45  LABEL	 BYTE				 ;AN000;
 	DB 'Copying from INSTALL diskette . . .' ;AN000;
@@ -1425,7 +1425,7 @@ PANEL45_L	EQU	($-PANEL45)/PANEL45_W	 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL46  LABEL	 BYTE					      ;AN000;
 	DB 'Installation of MS-DOS 4.0 is complete.   ';AN000;
@@ -1443,7 +1443,7 @@ PANEL46_L	EQU	($-PANEL46)/PANEL46_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL47  LABEL	 BYTE				 ;AN000;
 	DB 'Remove all diskettes.  Press Ctrl+Alt+Del to start DOS.';AN000;
@@ -1456,7 +1456,7 @@ PANEL47_L	EQU	($-PANEL47)/PANEL47_W	 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL48  LABEL	 BYTE						;AN000;
 	DB 'Installation of MS-DOS 4.0 is complete.            ';AN000;
@@ -1482,7 +1482,7 @@ PANEL48_L	EQU	($-PANEL48)/PANEL48_W			;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL49  LABEL	 BYTE					      ;AN000;
 	DB   ' F1=Help '                                      ;AN000;
@@ -1496,7 +1496,7 @@ PANEL49_L	EQU	($-PANEL49)/PANEL49_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL50  LABEL	 BYTE					      ;AN000;
 	DB   ' F9=Keys '                                      ;AN000;
@@ -1510,7 +1510,7 @@ PANEL50_L	EQU	($-PANEL50)/PANEL50_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL51  LABEL	 BYTE					      ;AN000;
 	DB   ' Esc=Cancel '                                   ;AN000;
@@ -1524,7 +1524,7 @@ PANEL51_L	EQU	($-PANEL51)/PANEL51_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL52  LABEL	 BYTE					      ;AN000;
 	DB   ' Enter '                                        ;AN000;
@@ -1538,7 +1538,7 @@ PANEL52_L	EQU	($-PANEL52)/PANEL52_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 PANEL53  LABEL	 BYTE						 ;AN000;
 	DB 'Installation of MS-DOS 4.0 is complete.          ';AN000;
 PANEL53_W	EQU	($-PANEL53)				 ;AN000;
@@ -1562,7 +1562,7 @@ PANEL53_L	EQU	($-PANEL53)/PANEL53_W			 ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL54  LABEL	 BYTE					      ;AN028;
 	DB   'Disk write-protected                  '         ;AN028;
@@ -1580,7 +1580,7 @@ PANEL54_L	EQU	($-PANEL54)/PANEL54_W		      ;AN028;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL55  LABEL	 BYTE					      ;AN028;
 	DB   'Drive not ready                                ';AN028;
@@ -1598,7 +1598,7 @@ PANEL55_L	EQU	($-PANEL55)/PANEL55_W		      ;AN028;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL56  LABEL	 BYTE						;AN000;
 	DB   'Defective diskette                               ';AN000;
@@ -1615,7 +1615,7 @@ PANEL56_L	EQU	($-PANEL56)/PANEL56_W			;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL57  LABEL	 BYTE					     ;AN000;
 	DB   'An error occurred while installing DOS.       ';AN000;
@@ -1630,7 +1630,7 @@ PANEL57_L	EQU	($-PANEL57)/PANEL57_W		     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL58  LABEL	 BYTE				   ;AN000;
 	DB   'Insert STARTUP diskette in drive B'  ;AC000;JW
@@ -1644,7 +1644,7 @@ PANEL58_L	EQU	($-PANEL58)/PANEL58_W	   ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL59  LABEL	 BYTE				    ;AN000;
 	DB   'Insert OPERATING diskette in drive A' ;AC000;JW
@@ -1658,7 +1658,7 @@ PANEL59_L	EQU	($-PANEL59)/PANEL59_W	    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL60  LABEL	 BYTE				  ;AN000;
 	DB   'Insert SHELL diskette in drive B'   ;AC000;JW
@@ -1672,7 +1672,7 @@ PANEL60_L	EQU	($-PANEL60)/PANEL60_W	  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL61  LABEL	 BYTE				   ;AN000;
 	DB   'Insert INSTALL diskette in drive A'  ;AC000;JW
@@ -1687,7 +1687,7 @@ PANEL61_L	EQU	($-PANEL61)/PANEL61_W	   ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL62 LABEL BYTE				      ;AN000;
 	DB   'Incorrect path                         ';AN000;
@@ -1706,7 +1706,7 @@ PANEL62_L	EQU	($-PANEL62)/PANEL62_W	      ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL63 LABEL BYTE					     ;AN028;
 	DB   'Missing or unreadable SELECT.PRT file         ';AN028;
@@ -1724,7 +1724,7 @@ PANEL63_L	EQU	($-PANEL63)/PANEL63_W		     ;AN028;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL64 LABEL BYTE					     ;AN000;
 	DB   'Printer profile information invalid           ';AN000;
@@ -1742,7 +1742,7 @@ PANEL64_L	EQU	($-PANEL64)/PANEL64_W		     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL65 LABEL BYTE				   ;AN000;
 	DB   'Formatting disk . . .'               ;AN000;
@@ -1756,7 +1756,7 @@ PANEL65_L	EQU	($-PANEL65)/PANEL65_W	   ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL66 LABEL BYTE				   ;AN000;
 	DB   'Formatting diskette in drive B . . .';AC000;JW
@@ -1771,19 +1771,19 @@ PANEL66_L	EQU	($-PANEL66)/PANEL66_W	   ;AN000;
 ;	<R9>	DO NOT TRANSLATE OR CHANGE!!!!
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL67 LABEL BYTE				;AN000;
-	DB   '####################################################';AN000;
+	DB   'ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿';AN000;
 PANEL67_W	EQU	($-PANEL67)		;AN000;
-	DB   '#                                                   #';AN000;
-	DB   '#                                                   #';AN000;
-	DB   '#                                                   #';AN000;
-	DB   '#                                                   #';AN000;
-	DB   '#                                                   #';AN000;
-	DB   '####################################################';AN000;
-	DB   '#                                                   #';AN000;
-	DB   '#####################################################';AN000;
+	DB   '³                                                   ³';AN000;
+	DB   '³                                                   ³';AN000;
+	DB   '³                                                   ³';AN000;
+	DB   '³                                                   ³';AN000;
+	DB   '³                                                   ³';AN000;
+	DB   'ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´';AN000;
+	DB   '³                                                   ³';AN000;
+	DB   'ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ';AN000;
 PANEL67_L	EQU	($-PANEL67)/PANEL67_W	;AN000;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1794,7 +1794,7 @@ PANEL67_L	EQU	($-PANEL67)/PANEL67_W	;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL68 LABEL BYTE					     ;AN000;
 	DB   'Incorrect diskette                            ';AC030;
@@ -1812,7 +1812,7 @@ PANEL68_L	EQU	($-PANEL68)/PANEL68_W		     ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL69 LABEL BYTE						;AN000;
 	DB   'An unrecoverable error occurred while installing ';AN000;
@@ -1827,7 +1827,7 @@ PANEL69_L	EQU	($-PANEL69)/PANEL69_W			;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL70 LABEL BYTE						  ;AN000;
 	DB   'Before proceeding, SELECT needs to make a copy of  ';AN000;
@@ -1850,7 +1850,7 @@ PANEL70_L	EQU	($-PANEL70)/PANEL70_W			  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL71 LABEL BYTE						   ;AN000;
 	DB   'Remove the INSTALL diskette from drive A  '          ;AN000;
@@ -1866,7 +1866,7 @@ PANEL71_L	EQU	($-PANEL71)/PANEL71_W			   ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL72 LABEL BYTE					    ;AN000;
 	DB   'Remove the SELECT COPY diskette from drive A' ;AC075;SEH ;AC000;JW
@@ -1882,7 +1882,7 @@ PANEL72_L	EQU	($-PANEL72)/PANEL72_W		    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL73 LABEL BYTE					     ;AN000;
 	DB   'Copying diskette . . .'                        ;AN000;
@@ -1940,7 +1940,7 @@ PANEL76_L	EQU	($-PANEL76)/PANEL76_W		     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL77  LABEL	 BYTE				   ;AN000;
 	DB   'Insert SELECT diskette in drive A'   ;AC000;JW
@@ -1954,7 +1954,7 @@ PANEL77_L	EQU	($-PANEL77)/PANEL77_W	   ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL78  LABEL	 BYTE				       ;AN000;
 	DB   'Insert OPERATING 1 diskette in drive A'  ;AC000;JW
@@ -1968,7 +1968,7 @@ PANEL78_L	EQU	($-PANEL78)/PANEL78_W	       ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL79  LABEL	 BYTE				       ;AN000;
 	DB   'Insert OPERATING 3 diskette in drive A'  ;AC000;JW
@@ -1982,7 +1982,7 @@ PANEL79_L	EQU	($-PANEL79)/PANEL79_W	       ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL80  LABEL	 BYTE				       ;AN000;
 	DB   'Copying files . . .'                     ;AN000;
@@ -1996,7 +1996,7 @@ PANEL80_L	EQU	($-PANEL80)/PANEL80_W	       ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL81  LABEL	 BYTE				    ;AN000;
 	DB   'Insert WORKING 1 diskette in drive B' ;AC000;JW
@@ -2010,7 +2010,7 @@ PANEL81_L	EQU	($-PANEL81)/PANEL81_W	    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL82  LABEL	 BYTE				       ;AN000;
 	DB   'Insert OPERATING 1 diskette in drive A'  ;AC000;JW
@@ -2026,7 +2026,7 @@ PANEL82_L	EQU	($-PANEL82)/PANEL82_W	       ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL83  LABEL	 BYTE				      ;AN000;
 	DB   'Insert OPERATING 2 diskette in drive A' ;AC000;JW
@@ -2042,7 +2042,7 @@ PANEL83_L	EQU	($-PANEL83)/PANEL83_W	      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL84  LABEL	 BYTE				       ;AN000;
 	DB   'Insert OPERATING 3 diskette in drive A'  ;AC000;JW
@@ -2058,7 +2058,7 @@ PANEL84_L	EQU	($-PANEL84)/PANEL84_W	       ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL85  LABEL	 BYTE				 ;AN000;
 	DB   'Insert SELECT diskette in drive A' ;AC000;JW
@@ -2074,7 +2074,7 @@ PANEL85_L	EQU	($-PANEL85)/PANEL85_W	 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL86 LABEL  BYTE				   ;AN000;
 	DB   'Insert WORKING 1 diskette in drive A';AC000;JW
@@ -2088,7 +2088,7 @@ PANEL86_L      EQU     ($-PANEL86)/PANEL86_W	   ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL87 LABEL  BYTE				     ;AN000;
 	DB   'Insert WORKING 2 diskette in drive A'  ;AC000;JW
@@ -2102,7 +2102,7 @@ PANEL87_L      EQU     ($-PANEL87)/PANEL87_W	     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL88 LABEL  BYTE				 ;AN000;
 	DB   'Insert SHELL diskette in drive A'  ;AC000;JW
@@ -2116,7 +2116,7 @@ PANEL88_L      EQU     ($-PANEL88)/PANEL88_W	 ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL89 LABEL  BYTE				  ;AN000;
 	DB   'Insert STARTUP diskette in drive A' ;AC000;JW
@@ -2130,7 +2130,7 @@ PANEL89_L      EQU     ($-PANEL89)/PANEL89_W	  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL90 LABEL  BYTE					  ;AN000;
 	DB   'SELECT will create the following diskettes:';AN000;
@@ -2153,7 +2153,7 @@ PANEL90_L      EQU     ($-PANEL90)/PANEL90_W		  ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL91  LABEL	 BYTE					      ;AN000;
 	DB 'Installation of MS-DOS 4.0 is complete.          ';AN000;
@@ -2177,7 +2177,7 @@ PANEL91_L	EQU	($-PANEL91)/PANEL91_W		      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL92  LABEL	 BYTE				      ;AN000;
 	DB   'Insert SELECT COPY diskette in drive A' ;AC075;SEH ;AC000;JW
@@ -2191,7 +2191,7 @@ PANEL92_L	EQU	($-PANEL92)/PANEL92_W	      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL93 LABEL	BYTE				      ;AN000;
 	DB   'Insert OPERATING 2 diskette in drive A' ;AC000;JW
@@ -2205,7 +2205,7 @@ PANEL93_L	EQU	($-PANEL93)/PANEL93_W	      ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 PANEL94 LABEL	BYTE						   ;AN000;
 	DB   '                    Expanded Memory Parameters      ';AN000;
 PANEL94_W	EQU	($-PANEL94)				   ;AN000;
@@ -2227,7 +2227,7 @@ PANEL94_L	EQU	($-PANEL94)/PANEL94_W			   ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL95 LABEL  BYTE						     ;AN000;
 	DB   'SELECT will create the following diskettes:'           ;AN000;
@@ -2253,7 +2253,7 @@ PANEL95_L      EQU     ($-PANEL95)/PANEL95_W			     ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL96 LABEL  BYTE					  ;AN000;
 	DB   'SELECT will create the following diskette:' ;AN000;
@@ -2275,7 +2275,7 @@ PANEL96_L      EQU     ($-PANEL96)/PANEL96_W		  ;AN000;
 ;	<R1>	The quotation marks have to left-right justified
 ;	<R5>	The width of the entry must not exceed the RULER provided.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;	      |---------1---------2---------3---------4---------5-|
+;	      ³---------1---------2---------3---------4---------5-³
 
 PANEL97 LABEL BYTE					     ;AN060;
 	DB   'Incorrect diskette                            ';AC060;
@@ -2292,7 +2292,7 @@ PANEL97_L	EQU	($-PANEL97)/PANEL97_W		     ;AN060;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL98  LABEL	 BYTE						  
 	DB   '                      MS-DOS Shell Option           '
@@ -2312,7 +2312,7 @@ PANEL98_L	EQU	($-PANEL98)/PANEL98_W
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL99  LABEL	 BYTE				    ;AN000;
 	DB   'Insert WORKING diskette in drive A'   ;AC000;JW
@@ -2325,7 +2325,7 @@ PANEL99_L	EQU	($-PANEL99)/PANEL99_W	    ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL100  LABEL	 BYTE				    	;AN000;
 	DB   'Insert MS-DOS SHELL diskette in drive A'	;AC000;JW
@@ -2338,7 +2338,7 @@ PANEL100_L	EQU	($-PANEL100)/PANEL100_W	    	;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL101  LABEL	 BYTE				      
 	DB   'Insert MS-DOS SHELL diskette in drive A'
@@ -2353,7 +2353,7 @@ PANEL101_L	EQU	($-PANEL101)/PANEL101_W
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL102  LABEL	 BYTE				       ;AN000;
 	DB   'Insert OPERATING diskette in drive A'  ;AC000;JW
@@ -2368,7 +2368,7 @@ PANEL102_L	EQU	($-PANEL102)/PANEL102_W	       ;AN000;
 ;
 ;	<R1>	The quotation marks have to left-right justified
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;     |---------1---------2---------3---------4---------5---------6---------7---------8
+;     ³---------1---------2---------3---------4---------5---------6---------7---------8
 
 PANEL103  LABEL	 BYTE				    ;AN000;
 	DB   'Insert WORKING 3 diskette in drive A' ;AC000;JW

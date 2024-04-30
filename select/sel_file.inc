@@ -575,3 +575,4 @@ P_FASTOPEN_C	DB	'\FASTOPEN.EXE '                        ;AN007;JW space for ASCI
 M_FASTOPEN_C	EQU	$ - P_FASTOPEN_C - 1			;AN007;JW
 								;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+

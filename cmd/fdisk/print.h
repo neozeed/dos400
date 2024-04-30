@@ -12,3 +12,4 @@
 	     printf("num sec=%d\n", part_table[temp][cur_disk].num_sec);
 
 		 wait_for_esc();
+

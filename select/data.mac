@@ -315,8 +315,8 @@ IN_DECSEP      DB   0,0 		     ;AN000;decimal separator
 IN_DELIMITEN   DB   '[]'                     ;AN000;left & right bracket char - on
 IN_DELIMITEX   DB   '  '                     ;AN000;left & right bracket char - off
 IN_DELIMITDIR  DB   '<>'                     ;AN000;direction delimitors (horz wind)
-IN_BORDEREN    DB   'О©╫д©О©╫О©╫О©╫О©╫О©╫'               ;AN000;8 border char (О©╫д©О©╫О©╫О©╫О©╫О©╫) entry
-IN_BORDEREX    DB   '12345678'               ;AN000;8 border char (О©╫д©О©╫О©╫О©╫О©╫О©╫) exit
+IN_BORDEREN    DB   'зд©ЁЁюды'               ;AN000;8 border char (зд©ЁЁюды) entry
+IN_BORDEREX    DB   '12345678'               ;AN000;8 border char (зд©ЁЁюды) exit
 IN_LVBOFF      DW   0			     ;AN000;log vid buf offset override
 IN_LVBSEG      DW   0			     ;AN000;log vid buf segment override
 IN_CURINSOFF   DW   0			     ;AN000;offset insert cursor bit map   (W)
@@ -499,3 +499,4 @@ LVB_INITED     DB   0			     ;AN000;flag for LVB allocated
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DATA	       ENDS			     ;AN000;
 PAGE					     ;AN000;
+

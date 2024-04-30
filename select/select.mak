@@ -284,3 +284,4 @@ SELECT.HLP: $(COUNTRY).TXT SELECT.MAK
         ..\SHELLHLP\ASC2HLP $(COUNTRY).TXT SELECT.HLP
         chmode +r usa.txt
 
+

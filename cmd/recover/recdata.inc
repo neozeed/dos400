@@ -165,3 +165,4 @@ ifdef fsexec									;an022;bgb
  public bytes_per_sector, exit_sw, exit_sw2, paras_per_fat, secs_per_64k
  public sec_count, paras_per_64k
 data	ends ;put this 1st so that the recmsg works
+

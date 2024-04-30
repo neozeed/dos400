@@ -24,3 +24,4 @@ TOGLPRN EQU	FALSE			;Separate keys for printer echo on
 					;and off
 ZEROEXT EQU	TRUE
 	ENDIF
+

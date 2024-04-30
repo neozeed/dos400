@@ -619,9 +619,12 @@ GETTRK:
 	JNZ	TRKFND				;No - check error conditions
 	JMP	DRTFAT				;Yes
 TRKFND:
-	mov	bx,word ptr Relative_Sector_Low ;get the low word of the sector ;an000; dms;
+	mov	bx,word ptr Relative_Sector_High ;get the high word of the sector ;an000; dms;
+	OR	BX,BX
+	JNZ	CLRTEST
+	mov	bx,word ptr Relative_Sector_Low ;get the high word of the sector ;an000; dms;
 	CMP	BX,STARTSECTOR			;Are any sectors in the system area bad?
-	JAE	CLRTEST 			; MZ 2.26 unsigned compare
+	JAE	CLRTEST				; MZ 2.26 unsigned compare
 	Message msgDiskUnusable 		;				;AC000;
 	JMP	FRMTPROB			;Bad disk -- try again
 CLRTEST:
@@ -644,6 +647,9 @@ CLRTEST:
 	ADD	AX,STARTSECTOR
 	MOV	SYSTRKS,AX			;Space FAT,Dir,and system files require
 CMPTRKS:
+	mov	bx,word ptr Relative_Sector_High ;get the high word of the sector ;an000; dms;
+	OR	BX,BX
+	JNZ	BAD100
 	mov	bx,word ptr Relative_Sector_Low ;get the low word of the sector ;an000; dms;
 	CMP	BX,SYSTRKS
 	JA	BAD100				; MZ 2.26 unsigned compare

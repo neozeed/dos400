@@ -302,11 +302,10 @@ VerMes_Ptr	dw	1040				;AN000;message number
 		dw	OFFSET	TranGroup:Minor_Ver_Num ;AN000;offset of arg
 		dw	0				;AN000;segment of arg
 		db	2				;AN000;second subst
-		db	Unsgn_Bin_Word			;AN000;binary to decimal
+		db	Right_Align+Unsgn_Bin_Word	;AN000;binary to decimal
 		db	2				;AN000;maximum width
 		db	2				;AN000;minimum width
 		db	"0"                             ;AN000;pad character
-
 ;  "Volume in drive %1 has no label",13,10
 ;
 VolMes_Ptr_2	dw	1041				;AN000;message number

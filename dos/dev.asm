@@ -641,7 +641,7 @@ readsr:
 	MOV	[CURSC_DRIVE],AL	    ;AN000;;LB. set current drive
 	MOV	AX,WORD PTR [CALLSSEC]	    ;AN000;;LB. current sector
 	MOV	[CURSC_SECTOR],AX	    ;AN000;;LB. set current sector
-	MOV	AX,WORD PTR [CALLSSEC+2]    ;AN000;;LB.
+	MOV	AX,WORD PTR [HIGH_SECTOR]   ;AN000;;LB.
 	MOV	[CURSC_SECTOR+2],AX	    ;AN000;;LB.
 saveseq2:				    ;AN000;
 	CLC				    ;AN000;LB. clear carry		      ;AN000;

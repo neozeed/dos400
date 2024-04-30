@@ -1595,11 +1595,21 @@ Trunc_Find_Extent:			;							   ;AN000;
        jnc  Trunc_shrink_extent 	; found extent ??					   ;AN000;
 
 Trunc_No_Extent:			; extent not found
-       xor  di,di			; no, return DI = 0					   ;AN000;
-       clc				; clear carry
-       jmp  Trunc_exit			; exit							   ;AN000;
+       mov   cx,Logical_Clusnum		; CX = given logical cluster number			   ;AN000;
+       mov   si,Cur_Hdr_Ptr		 ; DI-->current header					;AN000;
+       mov   di,es:[si].EH_COUNT   ; BX = first phys clus num of prev			   ;AN000;
+LAB_10c7_087c:
+       cmp    di, -1			; any next extent ??
+       JNZ    LAB_10c7_0884
+       JMP    Trunc_exit		; exit							   ;AN000;
 
-
+LAB_10c7_0884:
+       cmp    cx,es:[di]
+       ja     LAB_10c7_088c
+       jmp    LAB_10c7_089b
+LAB_10c7_088c:
+       mov    di,es:[di].EH_Next_Extn_Ptr   ; get address of next extent 			   ;AN000;
+       jmp    LAB_10c7_087c
 
 ;--------------------------------------------------------------------------
 ; Found extent.  Shrink the current extent and delete all subsequent extents.
@@ -1616,6 +1626,7 @@ Trunc_Shrink_Extent:
 ; First logical clus num matched. mark previous header or extent as last
 ;	  DI--->Extent found (starting extent)
 ;--------------------------------------------------------------------------
+LAB_10c7_089b:
        mov  si,es:[di].EH_Prev_Extn_Ptr   ; SI-->Previous extent				   ;AN000;
        cmp  si, -1			  ; any previous extent ??				   ;AN000;
        je   trunc_no_prev		  ; no, jump						   ;AN000;
@@ -1630,7 +1641,6 @@ Trunc_Shrink_Extent:
 Trunc_No_Prev:
        mov  si,Cur_Hdr_Ptr		  ; get current header					   ;AN000;
        mov  es:[si].FH_Next_Extn_Ptr,-1   ; mark header for no extent				;AN000;
-       mov  es:[si].FH_MRU_Extn_Ptr, -1
        mov  si,di			  ; save the current extent ptr 			   ;AN000;
        mov  cx, 0			  ; CX = buffer release counter 			   ;AN000;;AN000;
        jmp  short trunc_more		  ; release the extent					   ;AN000;
@@ -1680,8 +1690,7 @@ TRUNC_LOOP:				 ; loop for subsequent extents
 
 Trunc_Mark_Prev_Hdr:
        mov   di, Cur_Hdr_Ptr		 ; DI = address of current header
-       mov   es:[di].FH_Next_Extn_Ptr,-1   ; mark header for no extent				 ;AN000;
-       mov   es:[di].FH_MRU_Extn_Ptr, -1
+       mov   es:[di].FH_MRU_Extn_Ptr, -1   ; mark header for no extent				 ;AN000;
        jmp   short Trunc_Chk_Next_Ext		 ; look for next extent
 
 ;-----------------------------------------------------------------------------
@@ -1742,12 +1751,10 @@ Trunc_Join_Free_Area:
 Trunc_make_MRU_Hdr:
       cmp   Prev_Hdr_Ptr,-1		 ; first header in the Queue??				   ;AN000;
       jne   Trunc_move_Hdr
-      clc
       jmp   short Trunc_Exit		 ; yes, dont move to top				   ;AN000;
 
 Trunc_move_Hdr:
       CALL  MAKE_MRU_HEADER		 ; move header to TOP of the Queue			   ;AN000;
-      clc
 
 Trunc_Exit:
       CALL  Check_it

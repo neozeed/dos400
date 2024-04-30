@@ -1704,6 +1704,13 @@ UNKNOWN3_0_J:					;AN012;Legally formatted media,
 
 TRY5:
 	call	Cover_Fdisk_Bug 		;AN010;
+	CMP WORD PTR cs:[bx+7],"0" SHL 8 + "1"
+    JNZ        TRY6
+	CMP BYTE PTR cs:[bx+9],"."
+	JZ         COPYBPB
+	JMP        Unknown3_0
+
+TRY6:
 	CMP	WORD PTR cs:[bx+8],"." SHL 8 + "3"
 	jb	Unknown3_0_J			;AN012; Must be 2.1 boot record. Do not trust it, but still legal.
 	JNZ	COPYBPB 			;AN007; Honor OS2 boot record, or DOS 4.0 version

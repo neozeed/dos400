@@ -98,6 +98,7 @@ print_version:
 	pop	ax
 	xchg	ah,al
 	xor	ah,ah
+	inc ax	; Increment minor version.
 	mov	minor_ver_num,ax
 	mov	dx,offset trangroup:vermes_ptr
 	jmp	std_printf

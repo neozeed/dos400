@@ -172,7 +172,7 @@ COMMAND  14c8 0091
 0234 U 0000 CR,LF,"Top level process aborted, cannot continue",CR,LF
 0235 U 0000 CR,LF
 0463 U 0000 "Out of environment space",CR,LF
-0464 U 0001 CR,LF,CR,LF,"Microsoft(R) MS-DOS(R) Version 4.00",CR,LF
+0464 U 0001 CR,LF,CR,LF,"Microsoft(R) MS-DOS(R) Version 4.01",CR,LF
 	"             (C)Copyright Microsoft Corp 1981-1988",CR,LF
 0465 U 0000 "Specified COMMAND search directory bad",CR,LF
 0466 U 0000 "Specified COMMAND search directory bad access denied",CR,LF
@@ -1037,7 +1037,7 @@ FDISK    b1ba 0122
 0007 U 0000 "Error writing fixed disk",CR,LF
 0009 U 0003 "Y",0
 0010 U 0003 "N",0
-1001 U 0000 "MS-DOS Version 4.00"
+1001 U 0000 "MS-DOS Version 4.01"
 1002 U 0000 "Fixed Disk Setup Program"
 1003 U 0000 "(C)Copyright Microsoft Corp. 1983, 1988"
 1004 U 0000 "FDISK Options"
